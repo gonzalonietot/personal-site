@@ -1,7 +1,6 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <About msg="Este es mi portafolio" />
+    <About/>
   </div>
 </template>
 
