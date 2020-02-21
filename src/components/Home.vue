@@ -2,12 +2,17 @@
     <div>
         <h1 class="name">Mauro Gonzalo Nieto</h1>
         <h2 class="software-developer">Software developer</h2>
+        <template style="border: 1px white solid;">
+            <v-btn height="35" width="150" class="about-me" outlined color="#FFFFFF">Sobre mi</v-btn>
+            <v-btn height="35" width="150" class="technologies" outlined color="#FFFFFF">Tecnologías</v-btn>
+            <v-btn height="35" width="150" class="contact" outlined color="#FFFFFF">Contacto</v-btn>
+        </template>
     </div>
 </template>
 
 <script>
 export default {
-  name: 'About'
+  name: 'Home'
 }
 </script>
 
@@ -34,5 +39,17 @@ export default {
         transform: translate(1%, 500%);
         margin-left: 40%;
         margin-right: 40%;
+    }
+    .about-me {
+        transform: translate(1%, 500%);
+        margin-left: 45%;
+    }
+    .technologies {
+        transform: translate(1%, 550%);
+        margin-left: 45%;
+    }
+    .contact {
+        transform: translate(1%, 600%);
+        margin-left: 45%;
     }
 </style>
