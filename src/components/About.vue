@@ -1,6 +1,6 @@
 <template>
     <div>
-        <p style="color: white; border: 2px white solid;">Software developer</p>
+        <h2 class="software-developer">Software developer</h2>
     </div>
 </template>
 
@@ -13,9 +13,14 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
     div {
-        background-image: url("https://cdn-cms.f-static.net/ready_uploads/media/908685/2000_5d94afc9061d4.jpg");
-        padding: 400px;
+        background-image: url("https://images3.alphacoders.com/228/thumb-1920-228417.jpg");
+        padding: 350px;
         background-position: center;
+    }
+    .software-developer {
+        color: white;
+        border: 1px white solid;
+        text-align: center
     }
 
     .centrado {
