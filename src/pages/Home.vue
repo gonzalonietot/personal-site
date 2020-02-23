@@ -1,11 +1,11 @@
 <template>
     <div class="image-background">
-        <h1 class="name">Mauro Gonzalo Nieto</h1>
-        <h2 class="software-developer">Software developer</h2>
-        <template style="border: 1px white solid;">
-            <v-btn height="35" width="150" class="about-me" outlined color="#FFFFFF" @click="openAboutMe()">Sobre mi</v-btn>
-            <v-btn height="35" width="150" class="technologies" outlined color="#FFFFFF">Tecnologías</v-btn>
-            <v-btn height="35" width="150" class="contact" outlined color="#FFFFFF">Contacto</v-btn>
+        <h1 class="name">{{name}}</h1>
+        <h2 class="software-developer">{{softwareDeveloper}}</h2>
+        <template>
+            <button class="about-me button" @click="openAboutMe()">{{aboutMe}}</button>
+            <button class="technologies button">{{technologies}}</button>
+            <button class="contact button" >{{contact}}</button>
         </template>
         <about v-if="showAbout" :showAbout.sync="showAbout" />
     </div>
@@ -20,7 +20,12 @@ export default {
   },
   data() {
     return {
-      showAbout: false
+      showAbout: false,
+      name: 'Mauro Gonzalo Nieto',
+      aboutMe: 'Sobre mi',
+      technologies: 'Tecnologías',
+      contact: 'Contacto',
+      softwareDeveloper: 'Software developer'
     }
   },
   methods: {
@@ -35,9 +40,12 @@ export default {
 <style scoped>
     .image-background {
         background-image: url("https://www.fondosni.com/images/2012-10-21/Globo%20sobre%20el%20mundo-510880.jpg");
-        height: 730px;
-        max-height: 800px;
-        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 0 50%;
+        position: absolute;
+        height: 100%;
+        width: 100%;
     }
     .name {
         color: white;
@@ -51,20 +59,26 @@ export default {
         color: white;
         border: 1px white solid;
         text-align: center;
-        transform: translate(1%, 500%);
+        transform: translate(1%, 400%);
         margin-left: 40%;
         margin-right: 40%;
     }
     .about-me {
-        transform: translate(1%, 520%);
+        transform: translate(1%, 410%);
         margin-left: 45%;
     }
     .technologies {
-        transform: translate(1%, 590%);
+        transform: translate(1%, 440%);
         margin-left: 45%;
     }
     .contact {
-        transform: translate(1%, 660%);
+        transform: translate(1%, 470%);
         margin-left: 45%;
+    }
+    .button {
+        border: 1px white solid;
+        color: white;
+        height:40px ;
+        width: 150px;
     }
 </style>
