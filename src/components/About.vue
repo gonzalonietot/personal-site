@@ -1,10 +1,9 @@
 <template>
-    <div>
-        <v-dialog v-model="showAbout" persistent max-width="600px">
-            <v-card class="about-image-background">
-                <v-card-title>
+    <section v-if="showAbout" style="max-width: 600px">
+            <v-card style="color: white">
+                <h3>
                     <span class="headline" style="color:black">ACERCA DE MI</span>
-                </v-card-title>
+                </h3>
                 <v-card-text>
                     <ul class="list">
                         <li>Fecha de nacimiento: 01/11/1997</li>
@@ -25,8 +24,7 @@
                     <v-btn text @click="closeAboutMe()">Cerrar</v-btn>
                 </v-card-actions>
             </v-card>
-        </v-dialog>
-    </div>
+    </section>
 </template>
 
 <script>
