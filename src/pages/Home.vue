@@ -39,10 +39,10 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
     .image-background {
-        background-image: url("https://www.fondosni.com/images/2012-10-21/Globo%20sobre%20el%20mundo-510880.jpg");
+        background-image: url("https://aprender-libre.com/wp-content/uploads/2018/08/Iniciarse-como-Programador.jpeg");
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: 0 50%;
+        background-position: 5% 65%;
         position: absolute;
         height: 100%;
         width: 100%;
