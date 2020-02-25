@@ -103,14 +103,14 @@ export default {
         }
         .about-me {
             transform: translate(1%, 400%);
-            margin-left: 35%;
+            margin-left: 34%;
         }
         .technologies {
-            margin-left: 35%;
+            margin-left: 34%;
         }
         .contact {
             transform: translate(1%, 500%);
-            margin-left: 35%;
+            margin-left: 34%;
         }
     }
 </style>
