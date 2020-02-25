@@ -59,7 +59,7 @@ export default {
         color: white;
         border: 1px white solid;
         text-align: center;
-        transform: translate(1%, 400%);
+        transform: translate(1%, 360%);
         margin-left: 40%;
         margin-right: 40%;
     }
