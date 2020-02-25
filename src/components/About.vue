@@ -7,7 +7,8 @@
         <ul class="list">
             <li><strong>{{dateOfBirth}}</strong>: {{day}}
                 <i style="margin-left: 2%;" class="fa fa-birthday-cake" aria-hidden="true"></i></li>
-            <li><strong>{{nationality}}</strong>: {{country}}</li>
+            <li><strong>{{nationality}}</strong>: {{country}}
+                <i style="margin-left: 2%; font-size: 18px" class="fa fa-globe" aria-hidden="true"></i></li>
             <li><strong>{{phone}}</strong>: {{cellPhoneNumber}}
                 <i style="margin-left: 2%; font-size: 25px" class="fa fa-mobile" aria-hidden="true"></i></li>
             <li><strong>{{email}}</strong>:
@@ -66,14 +67,14 @@
 
 <style scoped>
     .about-image-background {
-        background: rgba(73,165,191,1);
-        background: -moz-linear-gradient(left, rgba(73,165,191,1) 0%, rgba(147,206,222,1) 0%, rgba(147,206,222,0.86) 58%, rgba(147,206,222,0.76) 100%);
-        background: -webkit-gradient(left top, right top, color-stop(0%, rgba(73,165,191,1)), color-stop(0%, rgba(147,206,222,1)), color-stop(58%, rgba(147,206,222,0.86)), color-stop(100%, rgba(147,206,222,0.76)));
-        background: -webkit-linear-gradient(left, rgba(73,165,191,1) 0%, rgba(147,206,222,1) 0%, rgba(147,206,222,0.86) 58%, rgba(147,206,222,0.76) 100%);
-        background: -o-linear-gradient(left, rgba(73,165,191,1) 0%, rgba(147,206,222,1) 0%, rgba(147,206,222,0.86) 58%, rgba(147,206,222,0.76) 100%);
-        background: -ms-linear-gradient(left, rgba(73,165,191,1) 0%, rgba(147,206,222,1) 0%, rgba(147,206,222,0.86) 58%, rgba(147,206,222,0.76) 100%);
-        background: linear-gradient(to right, rgba(73,165,191,1) 0%, rgba(147,206,222,1) 0%, rgba(147,206,222,0.86) 58%, rgba(147,206,222,0.76) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#49a5bf', endColorstr='#93cede', GradientType=1 );
+        background: rgba(255,255,255,1);
+        background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,0.61) 47%, rgba(237,237,237,0.17) 100%);
+        background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,1)), color-stop(47%, rgba(246,246,246,0.61)), color-stop(100%, rgba(237,237,237,0.17)));
+        background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,0.61) 47%, rgba(237,237,237,0.17) 100%);
+        background: -o-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,0.61) 47%, rgba(237,237,237,0.17) 100%);
+        background: -ms-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,0.61) 47%, rgba(237,237,237,0.17) 100%);
+        background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(246,246,246,0.61) 47%, rgba(237,237,237,0.17) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=1 );
         background-position: 0 50%;
         position: absolute;
         max-width: 40%;
@@ -86,7 +87,6 @@
         font-size: 16px;
     }
     .about {
-        font-size: 16px;
         margin-left: 3%
     }
     .btn {
