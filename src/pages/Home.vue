@@ -83,6 +83,9 @@ export default {
     }
 
     @media screen and (max-width: 768px) {
+        .image-background {
+            width: 98%;
+        }
         .name {
             transform: translate(1%, 120%);
             font-size: 35px;

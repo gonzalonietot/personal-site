@@ -21,12 +21,12 @@
                 </a>
             </li>
             <li><strong>{{gitHub}}</strong>:
-                <a style="color: midnightblue;" href="https://github.com/gnieto11" target="_blank">
+                <a href="https://github.com/gnieto11" target="_blank">
                     <i style="margin-left: 2%;font-size: 20px;" class="fa fa-github" aria-hidden="true"></i>
                 </a>
             </li>
             <li><strong>{{linkedin}}</strong>:
-                <a style="color: midnightblue;" href="https://www.linkedin.com/in/gonzalo-nieto-03508a199/"
+                <a href="https://www.linkedin.com/in/gonzalo-nieto-03508a199/"
                    target="_blank"><i style="margin-left: 2%; font-size: 20px;" class="fa fa-linkedin" aria-hidden="true"></i>
                 </a>
             </li>
