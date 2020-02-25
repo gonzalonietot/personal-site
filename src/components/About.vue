@@ -116,8 +116,11 @@
     @media screen and (max-width: 768px) {
         .about-image-background {
             max-width: 90%;
-            margin-top: 15%;
+            margin-top: 20%;
             margin-left: 5%;
+        }
+        .btn {
+            margin-left: 90%;
         }
     }
 

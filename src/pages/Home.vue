@@ -94,7 +94,7 @@ export default {
             margin-right: 0;
         }
         .software-developer {
-            transform: translate(1%, 160%);
+            transform: translate(1%, 100%);
             margin-left: 20%;
             margin-right: 20%;
         }
