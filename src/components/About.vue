@@ -2,7 +2,7 @@
     <section v-if="showAbout" class="about-image-background">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <button @click="closeAboutMe" class="btn"><i class="fa fa-close"></i></button>
-        <h3 style="margin-left: 40%;">{{aboutMe}}</h3>
+        <h5 style="margin-left: 40%;">{{aboutMe}}</h5>
         <hr class="line">
         <ul class="list">
             <li><strong>{{dateOfBirth}}</strong>: {{day}}
@@ -84,10 +84,11 @@
     .list {
         margin-top: 20px;
         margin-left: 5%;
-        font-size: 16px;
+        font-size: 13px;
     }
     .about {
-        margin-left: 3%
+        margin-left: 3%;
+        font-size: 13px;
     }
     .btn {
         color: black;
@@ -100,7 +101,7 @@
         background-color: darkcyan;
         height: 2px;
         width: 8%;
-        margin-left: 47%;
+        margin-left: 45%;
         margin-top: 5px;
     }
 </style>

@@ -1,7 +1,7 @@
 <template>
     <div class="image-background">
         <h1 class="name">{{name}}</h1>
-        <h2 class="software-developer">{{softwareDeveloper}}</h2>
+        <h3 class="software-developer">{{softwareDeveloper}}</h3>
         <template v-if="!showAbout">
             <button class="about-me button" @click="openAboutMe()">{{aboutMe}}</button>
             <button class="technologies button">{{technologies}}</button>
