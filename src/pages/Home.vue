@@ -84,7 +84,8 @@ export default {
 
     @media screen and (max-width: 768px) {
         .image-background {
-            width: 98%;
+            background-image: url("https://aprender-libre.com/wp-content/uploads/2018/08/Iniciarse-como-Programador.jpeg");
+            background-repeat: no-repeat;
         }
         .name {
             transform: translate(1%, 120%);

@@ -6,28 +6,28 @@
         <hr class="line">
         <ul class="list">
             <li><strong>{{dateOfBirth}}</strong>: {{day}}
-                <i style="margin-left: 2%;" class="fa fa-birthday-cake" aria-hidden="true"></i>
+                <i style="margin-left: 2%; color: black" class="fa fa-birthday-cake" aria-hidden="true"></i>
             </li>
             <li><strong>{{nationality}}</strong>: {{country}}
-                <i style="margin-left: 2%; font-size: 18px" class="fa fa-globe" aria-hidden="true"></i>
+                <i style="margin-left: 2%; font-size: 18px; color: black" class="fa fa-globe" aria-hidden="true"></i>
             </li>
             <li><strong>{{phone}}</strong>: {{cellPhoneNumber}}
-                <i style="margin-left: 2%; font-size: 25px" class="fa fa-mobile" aria-hidden="true"></i>
+                <i style="margin-left: 2%; font-size: 25px; color: black" class="fa fa-mobile" aria-hidden="true"></i>
             </li>
             <li><strong>{{email}}</strong>:
                 <a style="color: midnightblue;" href="mailto:maurogonzalonieto2011@hotmail.com.ar">{{emailName}}</a>
-                <a style="color: midnightblue;" href="mailto:maurogonzalonieto2011@hotmail.com.ar">
+                <a style="color: black;" href="mailto:maurogonzalonieto2011@hotmail.com.ar">
                     <i style="margin-left: 2%; font-size: 15px;" class="fa fa-envelope" aria-hidden="true"></i>
                 </a>
             </li>
             <li><strong>{{gitHub}}</strong>:
                 <a href="https://github.com/gnieto11" target="_blank">
-                    <i style="margin-left: 2%;font-size: 20px;" class="fa fa-github" aria-hidden="true"></i>
+                    <i style="margin-left: 2%;font-size: 20px; color: black" class="fa fa-github" aria-hidden="true"></i>
                 </a>
             </li>
             <li><strong>{{linkedin}}</strong>:
                 <a href="https://www.linkedin.com/in/gonzalo-nieto-03508a199/"
-                   target="_blank"><i style="margin-left: 2%; font-size: 20px;" class="fa fa-linkedin" aria-hidden="true"></i>
+                   target="_blank"><i style="margin-left: 2%; font-size: 20px; color: black" class="fa fa-linkedin" aria-hidden="true"></i>
                 </a>
             </li>
         </ul>
@@ -112,4 +112,13 @@
         margin-left: 45%;
         margin-top: 5px;
     }
+
+    @media screen and (max-width: 768px) {
+        .about-image-background {
+            max-width: 90%;
+            margin-top: 15%;
+            margin-left: 5%;
+        }
+    }
+
 </style>
