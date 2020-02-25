@@ -6,21 +6,30 @@
         <hr class="line">
         <ul class="list">
             <li><strong>{{dateOfBirth}}</strong>: {{day}}
-                <i style="margin-left: 2%;" class="fa fa-birthday-cake" aria-hidden="true"></i></li>
+                <i style="margin-left: 2%;" class="fa fa-birthday-cake" aria-hidden="true"></i>
+            </li>
             <li><strong>{{nationality}}</strong>: {{country}}
-                <i style="margin-left: 2%; font-size: 18px" class="fa fa-globe" aria-hidden="true"></i></li>
+                <i style="margin-left: 2%; font-size: 18px" class="fa fa-globe" aria-hidden="true"></i>
+            </li>
             <li><strong>{{phone}}</strong>: {{cellPhoneNumber}}
-                <i style="margin-left: 2%; font-size: 25px" class="fa fa-mobile" aria-hidden="true"></i></li>
+                <i style="margin-left: 2%; font-size: 25px" class="fa fa-mobile" aria-hidden="true"></i>
+            </li>
             <li><strong>{{email}}</strong>:
                 <a style="color: midnightblue;" href="mailto:maurogonzalonieto2011@hotmail.com.ar">{{emailName}}</a>
-                <i style="margin-left: 2%; font-size: 15px;" class="fa fa-envelope" aria-hidden="true"></i></li>
+                <a style="color: midnightblue;" href="mailto:maurogonzalonieto2011@hotmail.com.ar">
+                    <i style="margin-left: 2%; font-size: 15px;" class="fa fa-envelope" aria-hidden="true"></i>
+                </a>
+            </li>
             <li><strong>{{gitHub}}</strong>:
-                <a style="color: midnightblue;" href="https://github.com/gnieto11" target="_blank">{{userGitHub}}</a>
-                <i style="margin-left: 2%;font-size: 20px;" class="fa fa-github" aria-hidden="true"></i></li>
+                <a style="color: midnightblue;" href="https://github.com/gnieto11" target="_blank">
+                    <i style="margin-left: 2%;font-size: 20px;" class="fa fa-github" aria-hidden="true"></i>
+                </a>
+            </li>
             <li><strong>{{linkedin}}</strong>:
                 <a style="color: midnightblue;" href="https://www.linkedin.com/in/gonzalo-nieto-03508a199/"
-                   target="_blank">{{userLinkedin}}</a>
-                <i style="margin-left: 2%; font-size: 20px;" class="fa fa-linkedin" aria-hidden="true"></i></li>
+                   target="_blank"><i style="margin-left: 2%; font-size: 20px;" class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
+            </li>
         </ul>
         <p class="about">{{presentation}}</p>
         <br>
@@ -53,8 +62,7 @@
           '            que brinden soluciones a la comunidad.',
         gitHub: 'Github',
         userGitHub: 'gnieto11',
-        linkedin: 'Linkedin',
-        userLinkedin: 'https://www.linkedin.com/in/gonzalo-nieto-03508a199/'
+        linkedin: 'Linkedin'
       }
     },
     methods: {

@@ -59,7 +59,7 @@ export default {
         color: white;
         border: 1px white solid;
         text-align: center;
-        transform: translate(1%, 360%);
+        transform: translate(1%, 370%);
         margin-left: 40%;
         margin-right: 40%;
     }
@@ -80,5 +80,34 @@ export default {
         color: white;
         height:40px ;
         width: 150px;
+    }
+
+    @media screen and (max-width: 768px) {
+        .name {
+            transform: translate(1%, 120%);
+            font-size: 35px;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        .software-developer {
+            transform: translate(1%, 160%);
+            margin-left: 20%;
+            margin-right: 20%;
+        }
+        .button {
+            height: 30px;
+            width: 130px;
+        }
+        .about-me {
+            transform: translate(1%, 400%);
+            margin-left: 35%;
+        }
+        .technologies {
+            margin-left: 35%;
+        }
+        .contact {
+            transform: translate(1%, 500%);
+            margin-left: 35%;
+        }
     }
 </style>
