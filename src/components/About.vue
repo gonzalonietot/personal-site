@@ -2,19 +2,26 @@
     <section v-if="showAbout" class="about-image-background">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <button @click="closeAboutMe" class="btn"><i class="fa fa-close"></i></button>
-        <h3 style="margin-top: 10px">
-            <u style="margin-left: 40%;font-weight: 800;font-size: 32px;">{{aboutMe}}</u>
-        </h3>
+        <h3 style="margin-left: 40%;">{{aboutMe}}</h3>
+        <hr class="line">
         <ul class="list">
-            <li><strong style="text-decoration: underline;">{{dateOfBirth}}</strong>: {{day}}</li>
-            <li><strong style="text-decoration: underline;">{{nationality}}</strong>: {{country}}</li>
-            <li><strong style="text-decoration: underline;">{{phone}}</strong>: {{cellPhoneNumber}}</li>
-            <li><strong style="text-decoration: underline;">{{email}}</strong>: <a href="mailto:maurogonzalonieto2011@hotmail.com.ar">{{emailName}}</a></li>
+            <li><strong>{{dateOfBirth}}</strong>: {{day}}
+                <i style="margin-left: 2%;" class="fa fa-birthday-cake" aria-hidden="true"></i></li>
+            <li><strong>{{nationality}}</strong>: {{country}}</li>
+            <li><strong>{{phone}}</strong>: {{cellPhoneNumber}}
+                <i style="margin-left: 2%; font-size: 25px" class="fa fa-mobile" aria-hidden="true"></i></li>
+            <li><strong>{{email}}</strong>:
+                <a style="color: midnightblue;" href="mailto:maurogonzalonieto2011@hotmail.com.ar">{{emailName}}</a>
+                <i style="margin-left: 2%; font-size: 15px;" class="fa fa-envelope" aria-hidden="true"></i></li>
+            <li><strong>{{gitHub}}</strong>:
+                <a style="color: midnightblue;" href="https://github.com/gnieto11" target="_blank">{{userGitHub}}</a>
+                <i style="margin-left: 2%;font-size: 20px;" class="fa fa-github" aria-hidden="true"></i></li>
+            <li><strong>{{linkedin}}</strong>:
+                <a style="color: midnightblue;" href="https://www.linkedin.com/in/gonzalo-nieto-03508a199/"
+                   target="_blank">{{userLinkedin}}</a>
+                <i style="margin-left: 2%; font-size: 20px;" class="fa fa-linkedin" aria-hidden="true"></i></li>
         </ul>
-        <p class="about">Soy programador full stack, me desenvuelvo en tecnologías, tales como
-            HTML, CSS, Javascript, Vue.js, Node.js, Docker, MySql, MongoDB. Me considero
-            entusiasta con ganas de aprender nuevas tecnologías, dispuesto a enfrentar nuevos proyectos,
-            que brinden soluciones a la comunidad.</p>
+        <p class="about">{{presentation}}</p>
         <br>
     </section>
 </template>
@@ -38,7 +45,15 @@
         phone: 'Celular',
         cellPhoneNumber: '(0351) 156745259',
         email: 'E-mail',
-        emailName: 'maurogonzalonieto2011@hotmail.com.ar'
+        emailName: 'maurogonzalonieto2011@hotmail.com.ar',
+        presentation: 'Soy programador full stack, me desenvuelvo en tecnologías, tales como\n' +
+          '            HTML, CSS, Javascript, Vue.js, Node.js, Docker, MySql, MongoDB. Me considero\n' +
+          '            entusiasta con ganas de aprender nuevas tecnologías, dispuesto a enfrentar nuevos proyectos,\n' +
+          '            que brinden soluciones a la comunidad.',
+        gitHub: 'Github',
+        userGitHub: 'gnieto11',
+        linkedin: 'Linkedin',
+        userLinkedin: 'https://www.linkedin.com/in/gonzalo-nieto-03508a199/'
       }
     },
     methods: {
@@ -51,42 +66,41 @@
 
 <style scoped>
     .about-image-background {
-        background-repeat: no-repeat;
-        background-color: antiquewhite;
-        background-size: cover;
+        background: rgba(73,165,191,1);
+        background: -moz-linear-gradient(left, rgba(73,165,191,1) 0%, rgba(147,206,222,1) 0%, rgba(147,206,222,0.86) 58%, rgba(147,206,222,0.76) 100%);
+        background: -webkit-gradient(left top, right top, color-stop(0%, rgba(73,165,191,1)), color-stop(0%, rgba(147,206,222,1)), color-stop(58%, rgba(147,206,222,0.86)), color-stop(100%, rgba(147,206,222,0.76)));
+        background: -webkit-linear-gradient(left, rgba(73,165,191,1) 0%, rgba(147,206,222,1) 0%, rgba(147,206,222,0.86) 58%, rgba(147,206,222,0.76) 100%);
+        background: -o-linear-gradient(left, rgba(73,165,191,1) 0%, rgba(147,206,222,1) 0%, rgba(147,206,222,0.86) 58%, rgba(147,206,222,0.76) 100%);
+        background: -ms-linear-gradient(left, rgba(73,165,191,1) 0%, rgba(147,206,222,1) 0%, rgba(147,206,222,0.86) 58%, rgba(147,206,222,0.76) 100%);
+        background: linear-gradient(to right, rgba(73,165,191,1) 0%, rgba(147,206,222,1) 0%, rgba(147,206,222,0.86) 58%, rgba(147,206,222,0.76) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#49a5bf', endColorstr='#93cede', GradientType=1 );
         background-position: 0 50%;
         position: absolute;
-        max-width: 100%;
-        margin-top: 2%
+        max-width: 40%;
+        margin-top: 10%;
+        margin-left: 30%;
     }
     .list {
         margin-top: 20px;
         margin-left: 5%;
-        font-size: 15px;
+        font-size: 16px;
     }
     .about {
         font-size: 16px;
         margin-left: 3%
     }
     .btn {
-        background-color: DodgerBlue;
-        border: none;
-        color: white;
+        color: black;
         padding: 12px 16px;
         font-size: 16px;
         cursor: pointer;
-        margin-left: 97%;
+        margin-left: 92.6%;
     }
-    .btn:hover {
-        background-color: RoyalBlue;
+    .line {
+        background-color: darkcyan;
+        height: 2px;
+        width: 8%;
+        margin-left: 47%;
+        margin-top: 5px;
     }
-    .headline2 {
-        position: relative;
-        border: 1px solid #DF5D5C;
-        color: #DF5D5C;
-        font: 12px 'PT Sans',sans-serif;
-        line-height: 0;
-        border-top: none;
-    }
-
 </style>

@@ -2,7 +2,7 @@
     <div class="image-background">
         <h1 class="name">{{name}}</h1>
         <h2 class="software-developer">{{softwareDeveloper}}</h2>
-        <template>
+        <template v-if="!showAbout">
             <button class="about-me button" @click="openAboutMe()">{{aboutMe}}</button>
             <button class="technologies button">{{technologies}}</button>
             <button class="contact button" >{{contact}}</button>
@@ -64,15 +64,15 @@ export default {
         margin-right: 40%;
     }
     .about-me {
-        transform: translate(1%, 410%);
+        transform: translate(1%, 420%);
         margin-left: 45%;
     }
     .technologies {
-        transform: translate(1%, 440%);
+        transform: translate(1%, 450%);
         margin-left: 45%;
     }
     .contact {
-        transform: translate(1%, 470%);
+        transform: translate(1%, 480%);
         margin-left: 45%;
     }
     .button {
