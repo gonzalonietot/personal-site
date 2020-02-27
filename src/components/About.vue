@@ -2,7 +2,7 @@
     <section v-if="showAbout" class="about-image-background">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <button @click="closeAboutMe" class="btn"><i class="fa fa-close"></i></button>
-        <h5 style="margin-left: 40%;">{{aboutMe}}</h5>
+        <h5 class="titleAboutMe"><strong>{{aboutMe}}</strong></h5>
         <hr class="line">
         <ul class="list">
             <li><strong>{{nationality}}</strong>:{{country}}
@@ -45,16 +45,10 @@
     data() {
       return {
         aboutMe: 'Acerca de mí',
-        dateOfBirth: 'Fecha de nacimiento',
-        day: '01/11/1997',
         nationality: 'Nacionalidad',
         country: 'Argentina',
-        phone: 'Celular',
-        cellPhoneNumber: '(0351) 156745259',
-        email: 'E-mail',
-        emailName: 'maurogonzalonieto2011@hotmail.com.ar',
-        presentation: 'Soy programador full stack, me desenvuelvo en tecnologías, tales como\n' +
-          '            HTML5, CSS3, Javascript, Vue.js, Node.js, Docker, MySql, MongoDB. Me considero\n' +
+        presentation: 'Soy desarrollador web-mobile full stack, me desenvuelvo en tecnologías, tales como\n' +
+          '            HTML5, CSS3, Javascript, Vue.js, Node.js, Docker, MySql, MongoDB, Cordova. Me considero\n' +
           '            entusiasta con ganas de aprender nuevas tecnologías, dispuesto a enfrentar nuevos proyectos,\n' +
           '            que brinden soluciones a la comunidad.',
         gitHub: 'Github',
@@ -108,6 +102,9 @@
         margin-left: 45%;
         margin-top: 5px;
     }
+    .titleAboutMe {
+        margin-left: 40%;
+    }
 
     @media screen and (max-width: 768px) {
         .about-image-background {
@@ -122,7 +119,10 @@
             margin-left: 10%;
         }
         .line {
-            margin-left: 52%;
+            margin-left: 46%;
+        }
+        .titleAboutMe {
+            margin-left: 35%;
         }
     }
 
