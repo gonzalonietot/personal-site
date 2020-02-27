@@ -5,21 +5,18 @@
         <h5 style="margin-left: 40%;">{{aboutMe}}</h5>
         <hr class="line">
         <ul class="list">
-            <li><strong>{{dateOfBirth}}</strong>: {{day}}
-                <i style="margin-left: 2%; color: black" class="fa fa-birthday-cake" aria-hidden="true"></i>
-            </li>
-            <li><strong>{{nationality}}</strong>: {{country}}
+            <li><strong>{{nationality}}</strong>:{{country}}
                 <i style="margin-left: 2%; font-size: 18px; color: black" class="fa fa-globe" aria-hidden="true"></i>
             </li>
-            <li><strong>{{phone}}</strong>: {{cellPhoneNumber}}
-                <i style="margin-left: 2%; font-size: 25px; color: black" class="fa fa-mobile" aria-hidden="true"></i>
-            </li>
-            <li><strong>{{email}}</strong>:
-                <a style="color: midnightblue;" href="mailto:maurogonzalonieto2011@hotmail.com.ar">{{emailName}}</a>
-                <a style="color: black;" href="mailto:maurogonzalonieto2011@hotmail.com.ar">
-                    <i style="margin-left: 2%; font-size: 15px;" class="fa fa-envelope" aria-hidden="true"></i>
-                </a>
-            </li>
+<!--            <li><strong>{{phone}}</strong>: {{cellPhoneNumber}}-->
+<!--                <i style="margin-left: 2%; font-size: 25px; color: black" class="fa fa-mobile" aria-hidden="true"></i>-->
+<!--            </li>-->
+<!--            <li><strong>{{email}}</strong>:-->
+<!--                <a style="color: midnightblue;" href="mailto:maurogonzalonieto2011@hotmail.com.ar">{{emailName}}</a>-->
+<!--                <a style="color: black;" href="mailto:maurogonzalonieto2011@hotmail.com.ar">-->
+<!--                    <i style="margin-left: 2%; font-size: 15px;" class="fa fa-envelope" aria-hidden="true"></i>-->
+<!--                </a>-->
+<!--            </li>-->
             <li><strong>{{gitHub}}</strong>:
                 <a href="https://github.com/gnieto11" target="_blank">
                     <i style="margin-left: 2%;font-size: 20px; color: black" class="fa fa-github" aria-hidden="true"></i>
@@ -31,7 +28,7 @@
                 </a>
             </li>
         </ul>
-        <p class="about">{{presentation}}</p>
+        <p class="about"><strong style="color: black">{{presentation}}</strong></p>
         <br>
     </section>
 </template>
@@ -47,7 +44,7 @@
     },
     data() {
       return {
-        aboutMe: 'Acerca de mi',
+        aboutMe: 'Acerca de mí',
         dateOfBirth: 'Fecha de nacimiento',
         day: '01/11/1997',
         nationality: 'Nacionalidad',
@@ -57,11 +54,10 @@
         email: 'E-mail',
         emailName: 'maurogonzalonieto2011@hotmail.com.ar',
         presentation: 'Soy programador full stack, me desenvuelvo en tecnologías, tales como\n' +
-          '            HTML, CSS, Javascript, Vue.js, Node.js, Docker, MySql, MongoDB. Me considero\n' +
+          '            HTML5, CSS3, Javascript, Vue.js, Node.js, Docker, MySql, MongoDB. Me considero\n' +
           '            entusiasta con ganas de aprender nuevas tecnologías, dispuesto a enfrentar nuevos proyectos,\n' +
           '            que brinden soluciones a la comunidad.',
         gitHub: 'Github',
-        userGitHub: 'gnieto11',
         linkedin: 'Linkedin'
       }
     },
@@ -101,7 +97,7 @@
     .btn {
         color: black;
         padding: 12px 16px;
-        font-size: 16px;
+        font-size: 20px;
         cursor: pointer;
         margin-left: 92.6%;
     }
@@ -120,7 +116,13 @@
             margin-left: 5%;
         }
         .btn {
-            margin-left: 90%;
+            margin-left: 85%;
+        }
+        .list {
+            margin-left: 10%;
+        }
+        .line {
+            margin-left: 52%;
         }
     }
 
