@@ -1,5 +1,6 @@
 <template>
     <section v-if="showTechnologies" class="technologies-image-background">
+        <button type="button" @click="closeTechnologies()" class="btn"><i class="fa fa-close"></i></button>
         <h5 class="titleTechnologies"><strong>{{technologiesTitle}}</strong></h5>
         <hr class="line">
     </section>
@@ -18,6 +19,11 @@
     data() {
       return {
         technologiesTitle: 'Tecnologías'
+      }
+    },
+    methods: {
+      closeTechnologies () {
+        this.$emit('update:showTechnologies',false)
       }
     }
   }
