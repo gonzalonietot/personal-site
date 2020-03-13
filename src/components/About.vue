@@ -1,12 +1,13 @@
 <template>
     <section v-if="showAbout" class="about-image-background">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <button @click="closeAboutMe" class="btn"><i class="fa fa-close"></i></button>
+        <button type="button" @click="closeAboutMe" class="btn"><i class="fa fa-close"></i></button>
         <h5 class="titleAboutMe"><strong>{{aboutMe}}</strong></h5>
         <hr class="line">
         <ul class="list">
-            <li><strong>{{nationality}}</strong>:{{country}}
-                <i style="margin-left: 2%; font-size: 18px; color: black" class="fa fa-globe" aria-hidden="true"></i>
+            <li><strong style="padding-right: 10px;">
+                {{nationality}}:</strong>{{country}}
+                <i class="fa fa-globe icon" aria-hidden="true"></i>
             </li>
 <!--            <li><strong>{{phone}}</strong>: {{cellPhoneNumber}}-->
 <!--                <i style="margin-left: 2%; font-size: 25px; color: black" class="fa fa-mobile" aria-hidden="true"></i>-->
@@ -19,12 +20,12 @@
 <!--            </li>-->
             <li><strong>{{gitHub}}</strong>:
                 <a href="https://github.com/gnieto11" target="_blank">
-                    <i style="margin-left: 2%;font-size: 20px; color: black" class="fa fa-github" aria-hidden="true"></i>
+                    <i class="fa fa-github icon" aria-hidden="true"></i>
                 </a>
             </li>
             <li><strong>{{linkedin}}</strong>:
                 <a href="https://www.linkedin.com/in/gonzalo-nieto-03508a199/"
-                   target="_blank"><i style="margin-left: 2%; font-size: 20px; color: black" class="fa fa-linkedin" aria-hidden="true"></i>
+                   target="_blank"><i class="fa fa-linkedin icon" aria-hidden="true"></i>
                 </a>
             </li>
         </ul>
@@ -40,7 +41,7 @@
       showAbout: {
           type: Boolean,
           default: false
-        },
+      },
     },
     data() {
       return {
@@ -105,6 +106,12 @@
     .titleAboutMe {
         margin-left: 40%;
     }
+    .icon {
+        margin-left: 2%;
+        font-size: 20px;
+        color: black
+    }
+
 
     @media screen and (max-width: 768px) {
         .about-image-background {

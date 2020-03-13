@@ -2,21 +2,24 @@
     <div class="image-background">
         <h1 class="name">{{name}}</h1>
         <h3 class="software-developer">{{softwareDeveloper}}</h3>
-        <template v-if="!showAbout">
-            <button class="about-me button" @click="openAboutMe()">{{aboutMe}}</button>
-            <button class="technologies button">{{technologies}}</button>
-            <button class="contact button" >{{contact}}</button>
+        <template v-if="!showAbout && !showTechnologies">
+            <button type="button" class="about-me button" @click="openAboutMe()">{{aboutMe}}</button>
+            <button type="button" class="technologies button" @click="openTechnologies()">{{technologies}}</button>
+            <button type="button" class="contact button" >{{contact}}</button>
         </template>
         <about v-if="showAbout" :showAbout.sync="showAbout" />
+        <technologies v-if="showTechnologies" :show-technologies="showTechnologies"></technologies>
     </div>
 </template>
 
 <script>
 import about from '../components/About.vue'
+import technologies from '../components/Technologies'
 export default {
   name: 'Home',
   components: {
-    about
+    about,
+    technologies
   },
   data() {
     return {
@@ -25,12 +28,16 @@ export default {
       aboutMe: 'Sobre mi',
       technologies: 'Tecnologías',
       contact: 'Contacto',
-      softwareDeveloper: 'Software developer'
+      softwareDeveloper: 'Software developer',
+      showTechnologies: false
     }
   },
   methods: {
     openAboutMe () {
       this.showAbout = true
+    },
+    openTechnologies () {
+      this.showTechnologies = true
     }
   }
 }
