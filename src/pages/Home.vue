@@ -8,7 +8,7 @@
             <button type="button" class="contact button" >{{contact}}</button>
         </template>
         <about v-if="showAbout" :showAbout.sync="showAbout" />
-        <technologies v-if="showTechnologies" :show-technologies="showTechnologies"></technologies>
+        <technologies v-if="showTechnologies" :show-technologies.sync="showTechnologies"></technologies>
     </div>
 </template>
 

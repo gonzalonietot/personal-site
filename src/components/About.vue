@@ -2,22 +2,13 @@
     <section v-if="showAbout" class="about-image-background">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <button type="button" @click="closeAboutMe" class="btn"><i class="fa fa-close"></i></button>
-        <h5 class="titleAboutMe"><strong>{{aboutMe}}</strong></h5>
+        <h4 class="titleAboutMe"><strong>{{aboutMe}}</strong></h4>
         <hr class="line">
         <ul class="list">
             <li><strong style="padding-right: 10px;">
                 {{nationality}}:</strong>{{country}}
                 <i class="fa fa-globe icon" aria-hidden="true"></i>
             </li>
-<!--            <li><strong>{{phone}}</strong>: {{cellPhoneNumber}}-->
-<!--                <i style="margin-left: 2%; font-size: 25px; color: black" class="fa fa-mobile" aria-hidden="true"></i>-->
-<!--            </li>-->
-<!--            <li><strong>{{email}}</strong>:-->
-<!--                <a style="color: midnightblue;" href="mailto:maurogonzalonieto2011@hotmail.com.ar">{{emailName}}</a>-->
-<!--                <a style="color: black;" href="mailto:maurogonzalonieto2011@hotmail.com.ar">-->
-<!--                    <i style="margin-left: 2%; font-size: 15px;" class="fa fa-envelope" aria-hidden="true"></i>-->
-<!--                </a>-->
-<!--            </li>-->
             <li><strong>{{gitHub}}</strong>:
                 <a href="https://github.com/gnieto11" target="_blank">
                     <i class="fa fa-github icon" aria-hidden="true"></i>
@@ -88,6 +79,7 @@
     .about {
         margin-left: 3%;
         font-size: 13px;
+        padding-top: 10px;
     }
     .btn {
         color: black;
