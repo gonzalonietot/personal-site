@@ -79,7 +79,7 @@ export default {
             background-repeat: no-repeat;
         }
         .software-developer {
-            transform: translate(1%, 500%);
+            transform: translate(1%, 600%);
             margin-left: 3%;
             margin-right: 20%;
             width: 90%;
@@ -89,12 +89,12 @@ export default {
             width: 130px;
         }
         .about-me {
-            transform: translate(1%, 550%);
+            transform: translate(1%, 650%);
             margin-left: 30%;
         }
         .technologies {
             margin-left: 30%;
-            transform: translate(1%, 600%);
+            transform: translate(1%, 700%);
         }
     }
 </style>

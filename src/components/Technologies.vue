@@ -68,7 +68,7 @@
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=1 );
       max-width: 40%;
       margin-left: 30%;
-      margin-top: 14%;
+      margin-top: 16%;
 
     }
     .btn {

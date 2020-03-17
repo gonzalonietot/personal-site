@@ -68,7 +68,7 @@
         background-position: 0 50%;
         position: absolute;
         max-width: 40%;
-        margin-top: 13%;
+        margin-top: 16%;
         margin-left: 30%;
     }
     .list {
