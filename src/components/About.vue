@@ -88,15 +88,15 @@
         cursor: pointer;
         margin-left: 92.6%;
     }
+    .titleAboutMe {
+      margin-left: 40%;
+    }
     .line {
         background-color: darkcyan;
         height: 2px;
         width: 8%;
         margin-left: 45%;
         margin-top: 5px;
-    }
-    .titleAboutMe {
-        margin-left: 40%;
     }
     .icon {
         margin-left: 2%;
@@ -108,7 +108,7 @@
     @media screen and (max-width: 768px) {
         .about-image-background {
             max-width: 90%;
-            margin-top: 20%;
+            margin-top: 15%;
             margin-left: 5%;
         }
         .btn {

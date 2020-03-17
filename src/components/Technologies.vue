@@ -4,13 +4,32 @@
       <button type="button" @click="closeTechnologies()" class="btn"><i class="fa fa-close"></i></button>
       <h4 class="titleTechnologies"><strong>{{technologiesTitle}}</strong></h4>
       <hr class="line">
-      <img src="../../public/static/javacript.png" alt="javascript" height="50" width="50">
-      <img src="../../public/static/css3.jpg" alt="ccs3" height="50" width="50">
-      <img src="../../public/static/html5.png" alt="ccs3" height="50" width="50">
-      <img src="../../public/static/axios.jpg" alt="ccs3" height="50" width="50">
-      <img src="../../public/static/vuejs.jpg" alt="ccs3" height="50" width="50">
-      <img src="../../public/static/nodejs.png" alt="ccs3" height="50" width="50">
-      <img src="../../public/static/express.jpg" alt="ccs3" height="50" width="50">
+      <div style="padding-bottom: 50px">
+        <a href="https://developer.mozilla.org/es/docs/Web/JavaScript" target="_blank">
+          <img class="image" src="../../public/static/javacript.png" alt="javascript">
+        </a>
+        <a href="https://developer.mozilla.org/es/docs/HTML/HTML5" target="_blank">
+          <img class="image" src="../../public/static/html5.jpg" alt="html5">
+        </a>
+        <a href="https://developer.mozilla.org/es/docs/Web/CSS" target="_blank">
+          <img class="image" src="../../public/static/css3.jpg" alt="css3">
+        </a>
+        <a href="https://vuejs.org/v2/guide/" target="_blank">
+          <img class="image" src="../../public/static/vuejs.jpg" alt="vuejs">
+        </a>
+        <a href="https://nodejs.org/es/docs/" target="_blank">
+          <img class="image-below" src="../../public/static/nodejs.png" alt="nodejs">
+        </a>
+        <a href="https://www.mysql.com/" target="_blank">
+          <img class="image-below" src="../../public/static/mysql.svg" alt="mysql">
+        </a>
+        <a href="https://expressjs.com/es/" target="_blank">
+          <img class="image-below" src="../../public/static/expressjs.png" alt="mysql">
+        </a>
+        <a href="https://git-scm.com/doc" target="_blank">
+          <img class="image-below" src="../../public/static/git.png" alt="mysql">
+        </a>
+      </div>
     </section>
 
 </template>
@@ -28,7 +47,7 @@
       return {
         technologiesTitle: 'Tecnologías'
       }
-    },
+      },
     methods: {
       closeTechnologies () {
         this.$emit('update:showTechnologies',false)
@@ -52,6 +71,13 @@
       margin-top: 10%;
 
     }
+    .btn {
+      color: black;
+      padding: 12px 16px;
+      font-size: 20px;
+      cursor: pointer;
+      margin-left: 92.6%;
+    }
     .titleTechnologies {
         margin-left: 40%;
     }
@@ -62,11 +88,42 @@
       margin-left: 45%;
       margin-top: 5px;
     }
-    .btn {
-      color: black;
-      padding: 12px 16px;
-      font-size: 20px;
-      cursor: pointer;
-      margin-left: 92.6%;
+    .image {
+      height:80px;
+      width: 80px;
+      margin-left: 8%;
+    }
+    .image-below {
+      height:80px;
+      width: 80px;
+      margin-left: 8%;
+      margin-top: 8%;
+    }
+    @media screen and (max-width: 768px) {
+      .technologies-image-background {
+        max-width: 90%;
+        margin-top: 17%;
+        margin-left: 5%;
+      }
+      .btn {
+        margin-left: 85%;
+      }
+      .line {
+        margin-left: 46%;
+      }
+      .titleTechnologies {
+        margin-left: 35%;
+      }
+      .image {
+        height:40px;
+        width: 40px;
+        margin-left: 8%;
+      }
+      .image-below {
+        height:40px;
+        width: 40px;
+        margin-left: 8%;
+        margin-top: 8%;
+      }
     }
 </style>

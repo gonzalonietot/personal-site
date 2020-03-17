@@ -1,11 +1,10 @@
 <template>
     <div class="image-background">
-        <h1 class="name">{{name}}</h1>
+      <h1 class="name">{{name}}</h1>
         <h3 class="software-developer">{{softwareDeveloper}}</h3>
         <template v-if="!showAbout && !showTechnologies">
             <button type="button" class="about-me button" @click="openAboutMe()">{{aboutMe}}</button>
             <button type="button" class="technologies button" @click="openTechnologies()">{{technologies}}</button>
-            <button type="button" class="contact button" >{{contact}}</button>
         </template>
         <about v-if="showAbout" :showAbout.sync="showAbout" />
         <technologies v-if="showTechnologies" :show-technologies.sync="showTechnologies"></technologies>
@@ -24,12 +23,12 @@ export default {
   data() {
     return {
       showAbout: false,
+      showTechnologies: false,
+      showContact: false,
       name: 'Mauro Gonzalo Nieto',
       aboutMe: 'Sobre mi',
       technologies: 'Tecnologías',
-      contact: 'Contacto',
-      softwareDeveloper: 'Software developer',
-      showTechnologies: false
+      softwareDeveloper: 'Software developer'
     }
   },
   methods: {
@@ -45,19 +44,19 @@ export default {
 
 <style scoped>
     .image-background {
-        background-image: url("https://aprender-libre.com/wp-content/uploads/2018/08/Iniciarse-como-Programador.jpeg");
+        background-image: url("https://upload.wikimedia.org/wikipedia/commons/d/dd/Code_presentation_background.png");
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: 5% 65%;
         position: absolute;
-        height: 100%;
+        height: 150%;
         width: 100%;
     }
     .name {
         color: white;
         text-align: center;
         font-size: 300%;
-        transform: translate(1%, 200%);
+        font-family: monospace;
+        transform: translate(1%,  100%);
         margin-left: 30%;
         margin-right: 30%;
     }
@@ -77,10 +76,6 @@ export default {
         transform: translate(1%, 450%);
         margin-left: 45%;
     }
-    .contact {
-        transform: translate(1%, 480%);
-        margin-left: 45%;
-    }
     .button {
         border: 1px white solid;
         color: white;
@@ -90,34 +85,32 @@ export default {
 
     @media screen and (max-width: 768px) {
         .image-background {
-            background-image: url("https://aprender-libre.com/wp-content/uploads/2018/08/Iniciarse-como-Programador.jpeg");
+            background-image: url("https://upload.wikimedia.org/wikipedia/commons/d/dd/Code_presentation_background.png");
             background-repeat: no-repeat;
         }
         .name {
-            transform: translate(1%, 120%);
+            transform: translate(1%, 50%);
             font-size: 35px;
             margin-left: 0;
             margin-right: 0;
         }
         .software-developer {
-            transform: translate(1%, 100%);
-            margin-left: 20%;
+            transform: translate(1%, 150%);
+            margin-left: 5%;
             margin-right: 20%;
+            width: 90%;
         }
         .button {
             height: 30px;
             width: 130px;
         }
         .about-me {
-            transform: translate(1%, 400%);
-            margin-left: 34%;
+            transform: translate(1%, 250%);
+            margin-left: 30%;
         }
         .technologies {
-            margin-left: 34%;
-        }
-        .contact {
-            transform: translate(1%, 500%);
-            margin-left: 34%;
+            margin-left: 30%;
+            transform: translate(1%, 300%);
         }
     }
 </style>
