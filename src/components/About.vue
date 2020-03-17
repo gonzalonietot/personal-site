@@ -68,7 +68,7 @@
         background-position: 0 50%;
         position: absolute;
         max-width: 40%;
-        margin-top: 10%;
+        margin-top: 13%;
         margin-left: 30%;
     }
     .list {
@@ -108,8 +108,8 @@
     @media screen and (max-width: 768px) {
         .about-image-background {
             max-width: 90%;
-            margin-top: 15%;
-            margin-left: 5%;
+            margin-top: 60%;
+            margin-left: 3%;
         }
         .btn {
             margin-left: 85%;

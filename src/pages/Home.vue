@@ -1,6 +1,5 @@
 <template>
     <div class="image-background">
-      <h1 class="name">{{name}}</h1>
         <h3 class="software-developer">{{softwareDeveloper}}</h3>
         <template v-if="!showAbout && !showTechnologies">
             <button type="button" class="about-me button" @click="openAboutMe()">{{aboutMe}}</button>
@@ -44,36 +43,27 @@ export default {
 
 <style scoped>
     .image-background {
-        background-image: url("https://upload.wikimedia.org/wikipedia/commons/d/dd/Code_presentation_background.png");
+        background-image: url("https://i.picsum.photos/id/556/1920/1080.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         position: absolute;
         height: 150%;
         width: 100%;
     }
-    .name {
-        color: white;
-        text-align: center;
-        font-size: 300%;
-        font-family: monospace;
-        transform: translate(1%,  100%);
-        margin-left: 30%;
-        margin-right: 30%;
-    }
     .software-developer {
         color: white;
         border: 1px white solid;
         text-align: center;
-        transform: translate(1%, 370%);
+        transform: translate(1%, 600%);
         margin-left: 40%;
         margin-right: 40%;
     }
     .about-me {
-        transform: translate(1%, 420%);
+        transform: translate(1%, 550%);
         margin-left: 45%;
     }
     .technologies {
-        transform: translate(1%, 450%);
+        transform: translate(1%, 600%);
         margin-left: 45%;
     }
     .button {
@@ -85,18 +75,12 @@ export default {
 
     @media screen and (max-width: 768px) {
         .image-background {
-            background-image: url("https://upload.wikimedia.org/wikipedia/commons/d/dd/Code_presentation_background.png");
+            background-image: url("https://i.picsum.photos/id/556/1920/1080.jpg");
             background-repeat: no-repeat;
         }
-        .name {
-            transform: translate(1%, 50%);
-            font-size: 35px;
-            margin-left: 0;
-            margin-right: 0;
-        }
         .software-developer {
-            transform: translate(1%, 150%);
-            margin-left: 5%;
+            transform: translate(1%, 500%);
+            margin-left: 3%;
             margin-right: 20%;
             width: 90%;
         }
@@ -105,12 +89,12 @@ export default {
             width: 130px;
         }
         .about-me {
-            transform: translate(1%, 250%);
+            transform: translate(1%, 550%);
             margin-left: 30%;
         }
         .technologies {
             margin-left: 30%;
-            transform: translate(1%, 300%);
+            transform: translate(1%, 600%);
         }
     }
 </style>

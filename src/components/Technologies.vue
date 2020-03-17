@@ -9,22 +9,22 @@
           <img class="image" src="../../public/static/javacript.png" alt="javascript">
         </a>
         <a href="https://developer.mozilla.org/es/docs/HTML/HTML5" target="_blank">
-          <img class="image" src="../../public/static/html5.jpg" alt="html5">
+          <img class="image" src="../../public/static/html5.png" alt="html5">
         </a>
         <a href="https://developer.mozilla.org/es/docs/Web/CSS" target="_blank">
-          <img class="image" src="../../public/static/css3.jpg" alt="css3">
+          <img class="image" src="../../public/static/css.png" alt="css3">
         </a>
         <a href="https://vuejs.org/v2/guide/" target="_blank">
-          <img class="image" src="../../public/static/vuejs.jpg" alt="vuejs">
+          <img class="image" src="../../public/static/Vue.png" alt="vuejs">
         </a>
         <a href="https://nodejs.org/es/docs/" target="_blank">
           <img class="image-below" src="../../public/static/nodejs.png" alt="nodejs">
         </a>
         <a href="https://www.mysql.com/" target="_blank">
-          <img class="image-below" src="../../public/static/mysql.svg" alt="mysql">
+          <img class="image-below" src="../../public/static/mysql.png" alt="mysql">
         </a>
         <a href="https://expressjs.com/es/" target="_blank">
-          <img class="image-below" src="../../public/static/expressjs.png" alt="mysql">
+          <img class="image-below" src="../../public/static/express.png" alt="mysql">
         </a>
         <a href="https://git-scm.com/doc" target="_blank">
           <img class="image-below" src="../../public/static/git.png" alt="mysql">
@@ -68,7 +68,7 @@
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=1 );
       max-width: 40%;
       margin-left: 30%;
-      margin-top: 10%;
+      margin-top: 14%;
 
     }
     .btn {
@@ -102,8 +102,8 @@
     @media screen and (max-width: 768px) {
       .technologies-image-background {
         max-width: 90%;
-        margin-top: 17%;
-        margin-left: 5%;
+        margin-top: 60%;
+        margin-left: 3%;
       }
       .btn {
         margin-left: 85%;
@@ -112,7 +112,7 @@
         margin-left: 46%;
       }
       .titleTechnologies {
-        margin-left: 35%;
+        margin-left: 30%;
       }
       .image {
         height:40px;
