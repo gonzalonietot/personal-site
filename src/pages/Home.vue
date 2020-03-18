@@ -13,15 +13,15 @@
 </template>
 
 <script>
-import about from '../components/About.vue'
-import technologies from '../components/Technologies'
-import Contact from "../components/contact";
+import About from '../components/About.vue'
+import Technologies from '../components/Technologies'
+import Contact from '../components/Contact'
 export default {
   name: 'Home',
   components: {
     Contact,
-    about,
-    technologies
+    About,
+    Technologies
   },
   data() {
     return {

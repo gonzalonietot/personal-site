@@ -8,7 +8,9 @@
       shrink-on-scroll
       src="https://i.picsum.photos/id/974/1920/1080.jpg"
     >
-      <v-toolbar-title>Mauro Gonzalo Nieto</v-toolbar-title>
+      <v-avatar size="40" style="padding-top: 10px">
+        <v-img src="../../public/static/personal.jpg"></v-img>
+      </v-avatar>
       <v-spacer></v-spacer>
       <v-btn href="https://github.com/gnieto11"  target="_blank" icon><v-icon>mdi-github</v-icon></v-btn>
       <v-btn href="https://www.linkedin.com/in/gonzalo-nieto-03508a199/" target="_blank" icon><v-icon>mdi-linkedin</v-icon></v-btn>

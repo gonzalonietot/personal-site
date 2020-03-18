@@ -41,7 +41,7 @@
 
 <script>
   export default {
-    name: 'contact',
+    name: 'Contact',
     props: {
       showContact: {
         type: Boolean,
