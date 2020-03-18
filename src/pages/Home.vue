@@ -91,7 +91,7 @@ export default {
         background-repeat: no-repeat;
         background-size: cover;
         position: absolute;
-        height: 130%;
+        height: 100%;
         width: 100%;
     }
     .software-developer {
@@ -125,7 +125,7 @@ export default {
       position: absolute;
       bottom: 0;
       width: 100%;
-      height: 40px;
+      height: 30px;
       color: white;
     }
 
