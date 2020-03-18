@@ -91,7 +91,7 @@ export default {
         background-repeat: no-repeat;
         background-size: cover;
         position: absolute;
-        height: 130%;
+        height: 120%;
         width: 100%;
     }
     .software-developer {
@@ -137,8 +137,7 @@ export default {
         .software-developer {
             transform: translate(1%, 600%);
             margin-left: 3%;
-            margin-right: 20%;
-            width: 100%;
+            margin-right: 15px;
         }
         .button {
             height: 30px;
