@@ -57,19 +57,19 @@
 
 <style scoped>
     .about-image-background {
-        background: rgba(255,255,255,1);
-        background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,0.61) 47%, rgba(237,237,237,0.17) 100%);
-        background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,1)), color-stop(47%, rgba(246,246,246,0.61)), color-stop(100%, rgba(237,237,237,0.17)));
-        background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,0.61) 47%, rgba(237,237,237,0.17) 100%);
-        background: -o-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,0.61) 47%, rgba(237,237,237,0.17) 100%);
-        background: -ms-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,0.61) 47%, rgba(237,237,237,0.17) 100%);
-        background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(246,246,246,0.61) 47%, rgba(237,237,237,0.17) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=1 );
-        background-position: 0 50%;
-        position: absolute;
-        max-width: 40%;
-        margin-top: 16%;
-        margin-left: 30%;
+      background: rgba(255,255,255,1);
+      background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(237,237,237,0.23) 100%);
+      background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(237,237,237,0.23)));
+      background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(237,237,237,0.23) 100%);
+      background: -o-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(237,237,237,0.23) 100%);
+      background: -ms-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(237,237,237,0.23) 100%);
+      background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(237,237,237,0.23) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=1 );
+      background-position: 0 50%;
+      position: absolute;
+      max-width: 40%;
+      margin-top: 16%;
+      margin-left: 30%;
     }
     .list {
         margin-top: 20px;
@@ -108,7 +108,7 @@
     @media screen and (max-width: 768px) {
         .about-image-background {
             max-width: 90%;
-            margin-top: 60%;
+            margin-top: 65%;
             margin-left: 3%;
         }
         .btn {

@@ -1,21 +1,25 @@
 <template>
     <div class="image-background">
         <h3 class="software-developer">{{softwareDeveloper}}</h3>
-        <template v-if="!showAbout && !showTechnologies">
+        <template v-if="!showAbout && !showTechnologies && !showContact" >
             <button type="button" class="about-me button" @click="openAboutMe()">{{aboutMe}}</button>
             <button type="button" class="technologies button" @click="openTechnologies()">{{technologies}}</button>
+          <button type="button" class="contact button" @click="openContact()">{{contact}}</button>
         </template>
         <about v-if="showAbout" :showAbout.sync="showAbout" />
-        <technologies v-if="showTechnologies" :show-technologies.sync="showTechnologies"></technologies>
+        <technologies v-if="showTechnologies" :show-technologies.sync="showTechnologies" />
+        <contact v-if="showContact" :show-contact.sync="showContact" />
     </div>
 </template>
 
 <script>
 import about from '../components/About.vue'
 import technologies from '../components/Technologies'
+import Contact from "../components/contact";
 export default {
   name: 'Home',
   components: {
+    Contact,
     about,
     technologies
   },
@@ -27,6 +31,7 @@ export default {
       name: 'Mauro Gonzalo Nieto',
       aboutMe: 'Sobre mi',
       technologies: 'Tecnologías',
+      contact: 'Contacto',
       softwareDeveloper: 'Software developer'
     }
   },
@@ -36,6 +41,9 @@ export default {
     },
     openTechnologies () {
       this.showTechnologies = true
+    },
+    openContact () {
+      this.showContact = true
     }
   }
 }
@@ -65,6 +73,10 @@ export default {
     .technologies {
         transform: translate(1%, 600%);
         margin-left: 45%;
+    }
+    .contact {
+      transform: translate(1%, 650%);
+      margin-left: 45%;
     }
     .button {
         border: 1px white solid;
@@ -96,5 +108,9 @@ export default {
             margin-left: 30%;
             transform: translate(1%, 750%);
         }
+      .contact {
+        transform: translate(1%, 800%);
+        margin-left: 30%;
+      }
     }
 </style>

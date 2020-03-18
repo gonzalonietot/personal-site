@@ -12,7 +12,7 @@
           <img class="image" src="../../public/static/html5.png" alt="html5">
         </a>
         <a href="https://developer.mozilla.org/es/docs/Web/CSS" target="_blank">
-          <img class="image" src="../../public/static/css.png" alt="css3">
+          <img class="image" src="../../public/static/css3.jpg" alt="css3">
         </a>
         <a href="https://vuejs.org/v2/guide/" target="_blank">
           <img class="image" src="../../public/static/Vue.png" alt="vuejs">
@@ -59,17 +59,16 @@
 <style scoped>
     .technologies-image-background {
       background: rgba(255,255,255,1);
-      background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,0.61) 47%, rgba(237,237,237,0.17) 100%);
-      background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,1)), color-stop(47%, rgba(246,246,246,0.61)), color-stop(100%, rgba(237,237,237,0.17)));
-      background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,0.61) 47%, rgba(237,237,237,0.17) 100%);
-      background: -o-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,0.61) 47%, rgba(237,237,237,0.17) 100%);
-      background: -ms-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,0.61) 47%, rgba(237,237,237,0.17) 100%);
-      background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(246,246,246,0.61) 47%, rgba(237,237,237,0.17) 100%);
+      background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(237,237,237,0.23) 100%);
+      background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(237,237,237,0.23)));
+      background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(237,237,237,0.23) 100%);
+      background: -o-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(237,237,237,0.23) 100%);
+      background: -ms-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(237,237,237,0.23) 100%);
+      background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(237,237,237,0.23) 100%);
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=1 );
       max-width: 40%;
       margin-left: 30%;
       margin-top: 16%;
-
     }
     .btn {
       color: black;
@@ -102,7 +101,7 @@
     @media screen and (max-width: 768px) {
       .technologies-image-background {
         max-width: 90%;
-        margin-top: 60%;
+        margin-top: 70%;
         margin-left: 3%;
       }
       .btn {

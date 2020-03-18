@@ -6,7 +6,7 @@
       dark
       style="position: fixed"
       shrink-on-scroll
-      src="https://picsum.photos/1920/1080?random"
+      src="https://i.picsum.photos/id/974/1920/1080.jpg"
     >
       <v-toolbar-title>Mauro Gonzalo Nieto</v-toolbar-title>
       <v-spacer></v-spacer>
@@ -24,5 +24,3 @@
   }
 </script>
 
-<style scoped>
-</style>
