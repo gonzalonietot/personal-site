@@ -7,7 +7,6 @@
         <button type="button" class="contact button" @click="openContact()">{{contact}}</button>
       </template>
       <v-footer
-        v-if="!showAbout && !showTechnologies && !showContact"
         class="footer"
         dark
         padless
@@ -139,7 +138,7 @@ export default {
             transform: translate(1%, 600%);
             margin-left: 3%;
             margin-right: 20%;
-            width: 110%;
+            width: 100%;
         }
         .button {
             height: 30px;
