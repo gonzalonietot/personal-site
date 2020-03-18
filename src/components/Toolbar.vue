@@ -4,6 +4,7 @@
       absolute
       color="#fcb69f"
       dark
+      style="position: fixed"
       shrink-on-scroll
       src="https://picsum.photos/1920/1080?random"
     >

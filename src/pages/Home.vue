@@ -89,12 +89,12 @@ export default {
             width: 130px;
         }
         .about-me {
-            transform: translate(1%, 650%);
+            transform: translate(1%, 700%);
             margin-left: 30%;
         }
         .technologies {
             margin-left: 30%;
-            transform: translate(1%, 700%);
+            transform: translate(1%, 750%);
         }
     }
 </style>
