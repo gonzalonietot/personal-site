@@ -1,12 +1,13 @@
 <template>
     <div class="image-background">
       <h3 class="software-developer">{{softwareDeveloper}}</h3>
-      <template v-if="!showAbout && !showTechnologies && !showContact" >
+      <template v-if="!showAbout && !showTechnologies && !showContact">
         <button type="button" class="about-me button" @click="openAboutMe()">{{aboutMe}}</button>
         <button type="button" class="technologies button" @click="openTechnologies()">{{technologies}}</button>
         <button type="button" class="contact button" @click="openContact()">{{contact}}</button>
       </template>
       <v-footer
+        v-if="!showAbout && !showTechnologies && !showContact"
         class="footer"
         dark
         padless
@@ -91,7 +92,7 @@ export default {
         background-repeat: no-repeat;
         background-size: cover;
         position: absolute;
-        height: 120%;
+        height: 100%;
         width: 100%;
     }
     .software-developer {
