@@ -109,7 +109,7 @@
         .about-image-background {
             max-width: 90%;
             margin-top: 65%;
-            margin-left: 3%;
+            margin-left: 5%;
         }
         .btn {
             margin-left: 85%;

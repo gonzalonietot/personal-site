@@ -12,7 +12,7 @@
           <img class="image" src="../../public/static/html5.png" alt="html5">
         </a>
         <a href="https://developer.mozilla.org/es/docs/Web/CSS" target="_blank">
-          <img class="image" src="../../public/static/css3.jpg" alt="css3">
+          <img class="image" src="../../public/static/css3.png" alt="css3">
         </a>
         <a href="https://vuejs.org/v2/guide/" target="_blank">
           <img class="image" src="../../public/static/Vue.png" alt="vuejs">
@@ -102,7 +102,7 @@
       .technologies-image-background {
         max-width: 90%;
         margin-top: 70%;
-        margin-left: 3%;
+        margin-left: 5%;
       }
       .btn {
         margin-left: 85%;

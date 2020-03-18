@@ -118,7 +118,7 @@
     .contact-image-background {
       max-width: 90%;
       margin-top: 70%;
-      margin-left: 3%;
+      margin-left: 5%;
     }
     .btn {
       margin-left: 85%;
