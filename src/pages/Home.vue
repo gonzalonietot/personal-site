@@ -7,7 +7,6 @@
         <button type="button" class="contact button" @click="openContact()">{{contact}}</button>
       </template>
       <v-footer
-        v-if="!showAbout && !showTechnologies && !showContact"
         class="footer"
         dark
         padless
