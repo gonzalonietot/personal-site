@@ -139,7 +139,7 @@ export default {
             transform: translate(1%, 600%);
             margin-left: 3%;
             margin-right: 20%;
-            width: 90%;
+            width: 110%;
         }
         .button {
             height: 30px;
