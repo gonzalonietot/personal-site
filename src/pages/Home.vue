@@ -34,6 +34,7 @@
           </v-card-text>
         </v-card>
       </v-footer>
+
       <about v-if="showAbout" :showAbout.sync="showAbout" />
       <technologies v-if="showTechnologies" :show-technologies.sync="showTechnologies" />
       <contact v-if="showContact" :show-contact.sync="showContact" />
@@ -133,7 +134,7 @@ export default {
         .image-background {
             background-image: url("https://i.picsum.photos/id/556/1920/1080.jpg");
             background-repeat: no-repeat;
-            position: relative;
+            position: absolute;
             height: 120%;
             width: 100%;
         }
@@ -159,7 +160,7 @@ export default {
           margin-left: 30%;
         }
         .footer {
-          position: relative;
+          position: absolute;
         }
     }
 </style>

@@ -29,7 +29,7 @@
           { title: 'Click Me' },
           { title: 'Click Me' },
           { title: 'Click Me' },
-          { title: 'Click Me 2' },
+          { title: 'Click Me 2'},
         ],
       }
     }
