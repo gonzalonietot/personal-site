@@ -22,7 +22,17 @@
 
 <script>
   export default {
-    name: 'Toolbar'
+    name: 'Toolbar',
+    data () {
+      return {
+        items: [
+          { title: 'Click Me' },
+          { title: 'Click Me' },
+          { title: 'Click Me' },
+          { title: 'Click Me 2' },
+        ],
+      }
+    }
   }
 </script>
 

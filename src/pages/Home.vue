@@ -91,8 +91,8 @@ export default {
         background-image: url("https://i.picsum.photos/id/556/1920/1080.jpg");
         background-repeat: no-repeat;
         background-size: cover;
-        position: absolute;
-        height: 120%;
+        position: fixed;
+        height: 100%;
         width: 100%;
     }
     .software-developer {
@@ -123,7 +123,7 @@ export default {
     }
     .footer {
       background-color: black;
-      position: absolute;
+      position: fixed;
       bottom: 0;
       width: 100%;
       color: white;
@@ -133,6 +133,9 @@ export default {
         .image-background {
             background-image: url("https://i.picsum.photos/id/556/1920/1080.jpg");
             background-repeat: no-repeat;
+            position: relative;
+            height: 120%;
+            width: 100%;
         }
         .software-developer {
             transform: translate(1%, 600%);
@@ -154,6 +157,9 @@ export default {
         .contact {
           transform: translate(1%, 800%);
           margin-left: 30%;
-      }
+        }
+        .footer {
+          position: relative;
+        }
     }
 </style>

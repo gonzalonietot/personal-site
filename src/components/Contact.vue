@@ -34,12 +34,13 @@
           required
         ></v-text-field>
       </v-form>
-      <v-btn style="margin-left: 88%; color: black" icon><v-icon>mdi-send</v-icon></v-btn>
+      <v-btn style="margin-left: 88%; color: black" type="submit" @submit.prevent="sendEmail" icon><v-icon>mdi-send</v-icon></v-btn>
     </template>
   </section>
 </template>
 
 <script>
+  import emailjs from 'emailjs-com'
   export default {
     name: 'Contact',
     props: {
@@ -74,6 +75,16 @@
       },
       validate () {
         this.$refs.form.validate()
+      },
+      sendEmail (e) {
+        console.log(e, 'Que tiene e?')
+        emailjs.sendForm('outlook', 'template_DS5RpxAn', e.target, 'user_m18gpHeoWn3IR6PJ2GpDm')
+          .then((result) => {
+            console.log(result, 'Result')
+            console.log('SUCCESS!', result.status, result.text)
+          }, (error) => {
+            console.log('FAILED...', error)
+          });
       }
     }
   }
