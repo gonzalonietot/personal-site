@@ -92,8 +92,8 @@ export default {
         background-image: url("https://i.picsum.photos/id/556/1920/1080.jpg");
         background-repeat: no-repeat;
         background-size: cover;
-        position: fixed;
-        height: 100%;
+        position: absolute;
+        height: 120%;
         width: 100%;
     }
     .software-developer {
@@ -124,7 +124,7 @@ export default {
     }
     .footer {
       background-color: black;
-      position: fixed;
+      position: absolute;
       bottom: 0;
       width: 100%;
       color: white;
@@ -158,9 +158,6 @@ export default {
         .contact {
           transform: translate(1%, 800%);
           margin-left: 30%;
-        }
-        .footer {
-          position: absolute;
         }
     }
 </style>
