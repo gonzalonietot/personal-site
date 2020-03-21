@@ -1,44 +1,53 @@
 <template>
-    <div class="image-background">
-      <h3 class="software-developer">{{softwareDeveloper}}</h3>
-      <template v-if="!showAbout && !showTechnologies && !showContact">
-        <button type="button" class="about-me button" @click="openAboutMe()">{{aboutMe}}</button>
-        <button type="button" class="technologies button" @click="openTechnologies()">{{technologies}}</button>
-        <button type="button" class="contact button" @click="openContact()">{{contact}}</button>
-      </template>
-      <v-footer
-        v-if="!showAbout && !showTechnologies && !showContact"
-        class="footer"
-        dark
-        padless
+  <div class="image-background">
+    <h3 class="software-developer">
+      {{ softwareDeveloper }}
+    </h3>
+    <template v-if="!showAbout && !showTechnologies && !showContact">
+      <button type="button" class="about-me button" @click="openAboutMe()">
+        {{ aboutMe }}
+      </button>
+      <button type="button" class="technologies button" @click="openTechnologies()">
+        {{ technologies }}
+      </button>
+      <button type="button" class="contact button" @click="openContact()">
+        {{ contact }}
+      </button>
+    </template>
+    <v-footer
+      v-if="!showAbout && !showTechnologies && !showContact"
+      class="footer"
+      dark
+      padless
+    >
+      <v-card
+        class="flex"
+        flat
+        tile
       >
-        <v-card
-          class="flex"
-          flat
-          tile
-        >
-          <v-card-title class="teal">
-            <strong class="subheading">{{connect}}</strong>
-            <v-spacer></v-spacer>
-            <v-btn
-              v-for="icon in icons"
-              :key="icon"
-              class="mx-4"
-              dark
-              icon>
-              <v-icon size="24px">{{ icon }}</v-icon>
-            </v-btn>
-          </v-card-title>
-          <v-card-text class="py-2 white--text text-center">
-            {{ new Date().getFullYear() }} — <strong>{{allRightsReserved}}<br>{{fullName}}</strong>
-          </v-card-text>
-        </v-card>
-      </v-footer>
-
-      <about v-if="showAbout" :showAbout.sync="showAbout" />
-      <technologies v-if="showTechnologies" :show-technologies.sync="showTechnologies" />
-      <contact v-if="showContact" :show-contact.sync="showContact" />
-    </div>
+        <v-card-title class="teal">
+          <strong class="subheading">{{ connect }}</strong>
+          <v-spacer />
+          <v-btn
+            v-for="icon in icons"
+            :key="icon"
+            class="mx-4"
+            dark
+            icon>
+            <v-icon size="24px">
+              {{ icon }}
+            </v-icon>
+          </v-btn>
+        </v-card-title>
+        <v-card-text class="py-2 white--text text-center">
+          {{ new Date().getFullYear() }} — <strong>{{ allRightsReserved }}<br>{{ fullName }}</strong>
+        </v-card-text>
+      </v-card>
+    </v-footer>
+    <about v-if="showAbout" :show-about.sync="showAbout" />
+    <technologies v-if="showTechnologies" :show-technologies.sync="showTechnologies" />
+    <contact v-if="showContact" :show-contact.sync="showContact" />
+  </div>
 </template>
 
 <script>

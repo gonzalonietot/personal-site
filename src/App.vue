@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <Toolbar/>
-    <Home/>
+    <Toolbar />
+    <Home />
   </div>
 </template>
 
