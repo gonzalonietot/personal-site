@@ -1,8 +1,12 @@
 <template>
   <section v-if="showContact" class="contact-image-background">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <button type="button" @click="closeContact()" class="btn"><i class="fa fa-close"></i></button>
-    <h4 class="titleContact"><strong>{{contactTitle}}</strong></h4>
+    <button type="button" class="btn" @click="closeContact()">
+      <i class="fa fa-close"></i>
+    </button>
+    <h4 class="titleContact">
+      <strong>{{ contactTitle }}</strong>
+    </h4>
     <hr class="line">
     <template>
       <v-form
@@ -11,30 +15,31 @@
         lazy-validation
       >
         <v-text-field
-          class="form"
           v-model="name"
+          class="form"
           :counter="20"
           :rules="nameRules"
           label="Nombre"
           required
-        >
-        </v-text-field>
+        />
         <v-text-field
-          class="form"
           v-model="email"
+          class="form"
           :rules="emailRules"
           label="Email"
           required
-        ></v-text-field>
+        />
         <v-text-field
-          class="form"
           v-model="message"
+          class="form"
           :rules="messageRules"
           label="Mensaje"
           required
-        ></v-text-field>
+        />
       </v-form>
-      <v-btn style="margin-left: 88%; color: black" type="submit" @submit.prevent="sendEmail" icon><v-icon>mdi-send</v-icon></v-btn>
+      <v-btn style="margin-left: 88%; color: black" type="submit" icon @submit.prevent="sendEmail">
+        <v-icon>mdi-send</v-icon>
+      </v-btn>
     </template>
   </section>
 </template>
