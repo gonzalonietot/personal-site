@@ -114,23 +114,23 @@
 
 
     @media screen and (max-width: 768px) {
-        .about-image-background {
-            max-width: 90%;
-            margin-top: 65%;
-            margin-left: 5%;
-        }
-        .btn {
-            margin-left: 85%;
-        }
-        .list {
-            margin-left: 10%;
-        }
-        .line {
-            margin-left: 46%;
-        }
-        .titleAboutMe {
-            margin-left: 35%;
-        }
+      .about-image-background {
+        max-width: 90%;
+        margin-top: 65%;
+        margin-left: 5%;
+      }
+      .btn {
+        margin-left: 85%;
+      }
+      .list {
+        margin-left: 10%;
+      }
+      .line {
+        margin-left: 46%;
+      }
+      .titleAboutMe {
+        margin-left: 35%;
+      }
     }
 
 </style>
