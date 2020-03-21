@@ -141,14 +141,9 @@ export default {
 
     @media screen and (max-width: 768px) {
         .image-background {
-            background-image: url("https://i.picsum.photos/id/556/1920/1080.jpg");
-            background-repeat: no-repeat;
-            position: absolute;
-            height: 120%;
-            width: 100%;
+            height: 110%;
         }
         .software-developer {
-            transform: translate(1%, 600%);
             margin-left: 3%;
             margin-right: 15px;
         }
@@ -168,5 +163,22 @@ export default {
           transform: translate(1%, 800%);
           margin-left: 30%;
         }
+    }
+    @media (width: 768px) and (max-width: 1024px) {
+      .image-background {
+        height: 100%;
+      }
+      .software-developer {
+        margin-left: 1%;
+      }
+      .about-me {
+        margin-left: 40%;
+      }
+      .technologies {
+        margin-left: 40%;
+      }
+      .contact {
+        margin-left: 40%;
+      }
     }
 </style>
