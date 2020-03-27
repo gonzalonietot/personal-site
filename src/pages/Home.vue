@@ -142,7 +142,7 @@ export default {
 
     @media screen and (max-width: 480px) {
         .image-background {
-            height: 140%;
+            height: 110%;
         }
         .software-developer {
             margin-left: 3%;
