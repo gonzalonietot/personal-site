@@ -102,7 +102,7 @@ export default {
         background-repeat: no-repeat;
         background-size: cover;
         position: absolute;
-        height: 125%;
+        height: 135%;
         width: 100%;
     }
     .software-developer {
@@ -135,14 +135,13 @@ export default {
       background-color: black;
       position: absolute;
       bottom: 0;
-      height: 10px;
       width: 100%;
       color: white;
     }
 
     @media screen and (max-width: 480px) {
         .image-background {
-            height: 110%;
+            height: 140%;
         }
         .software-developer {
             margin-left: 3%;
