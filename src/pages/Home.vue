@@ -164,21 +164,28 @@ export default {
           margin-left: 30%;
         }
     }
-    /*@media (width: 768px) and (max-width: 1024px) {*/
-    /*  .image-background {*/
-    /*    height: 100%;*/
-    /*  }*/
-    /*  .software-developer {*/
-    /*    margin-left: 1%;*/
-    /*  }*/
-    /*  .about-me {*/
-    /*    margin-left: 40%;*/
-    /*  }*/
-    /*  .technologies {*/
-    /*    margin-left: 40%;*/
-    /*  }*/
-    /*  .contact {*/
-    /*    margin-left: 40%;*/
-    /*  }*/
-    /*}*/
+
+    @media (min-width: 480px) and (max-width: 1024px) {
+      .image-background {
+        height: 140%;
+        width: 100%;
+      }
+      .software-developer {
+        transform: translate(1%, 500%);
+        margin-right: 20%;
+        margin-left: 20%;
+      }
+      .about-me {
+        transform: translate(1%, 450%);
+        margin-left: 40%;
+      }
+      .technologies {
+        transform: translate(1%, 500%);
+        margin-left: 40%;
+      }
+      .contact {
+        transform: translate(1%, 550%);
+        margin-left: 40%;
+      }
+    }
 </style>
