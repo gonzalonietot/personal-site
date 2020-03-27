@@ -164,6 +164,9 @@ export default {
           transform: translate(1%, 800%);
           margin-left: 30%;
         }
+        .footer {
+          height: 100%;
+        }
     }
     /*@media (width: 768px) and (max-width: 1024px) {*/
     /*  .image-background {*/
