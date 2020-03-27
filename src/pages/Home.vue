@@ -142,7 +142,7 @@ export default {
 
     @media screen and (max-width: 480px) {
         .image-background {
-            height: 140%;
+            height: 200%;
         }
         .software-developer {
             margin-left: 3%;
@@ -163,9 +163,6 @@ export default {
         .contact {
           transform: translate(1%, 800%);
           margin-left: 30%;
-        }
-        .footer {
-          height: 100%;
         }
     }
     /*@media (width: 768px) and (max-width: 1024px) {*/
