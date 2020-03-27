@@ -102,7 +102,7 @@ export default {
         background-repeat: no-repeat;
         background-size: cover;
         position: absolute;
-        height: 120%;
+        height: 140%;
         width: 100%;
     }
     .software-developer {
@@ -135,13 +135,14 @@ export default {
       background-color: black;
       position: absolute;
       bottom: 0;
+      height: 10px;
       width: 100%;
       color: white;
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 480px) {
         .image-background {
-            height: 110%;
+            height: 200%;
         }
         .software-developer {
             margin-left: 3%;
@@ -164,21 +165,21 @@ export default {
           margin-left: 30%;
         }
     }
-    @media (width: 768px) and (max-width: 1024px) {
-      .image-background {
-        height: 100%;
-      }
-      .software-developer {
-        margin-left: 1%;
-      }
-      .about-me {
-        margin-left: 40%;
-      }
-      .technologies {
-        margin-left: 40%;
-      }
-      .contact {
-        margin-left: 40%;
-      }
-    }
+    /*@media (width: 768px) and (max-width: 1024px) {*/
+    /*  .image-background {*/
+    /*    height: 100%;*/
+    /*  }*/
+    /*  .software-developer {*/
+    /*    margin-left: 1%;*/
+    /*  }*/
+    /*  .about-me {*/
+    /*    margin-left: 40%;*/
+    /*  }*/
+    /*  .technologies {*/
+    /*    margin-left: 40%;*/
+    /*  }*/
+    /*  .contact {*/
+    /*    margin-left: 40%;*/
+    /*  }*/
+    /*}*/
 </style>
