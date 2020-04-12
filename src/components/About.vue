@@ -94,7 +94,7 @@
         padding: 12px 16px;
         font-size: 20px;
         cursor: pointer;
-        margin-left: 92.6%;
+        margin-left: 91%;
     }
     .titleAboutMe {
       margin-left: 40%;
@@ -112,11 +112,10 @@
         color: black
     }
 
-
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 600px) {
       .about-image-background {
         max-width: 90%;
-        margin-top: 65%;
+        margin-top: 52%;
         margin-left: 5%;
       }
       .btn {
@@ -132,5 +131,14 @@
         margin-left: 35%;
       }
     }
-
+    @media (min-width: 600px) and (max-width: 900px) {
+      .about-image-background {
+        max-width: 90%;
+        margin-top: 20%;
+        margin-left: 5%;
+      }
+      .btn {
+        margin-left: 92%;
+      }
+    }
 </style>

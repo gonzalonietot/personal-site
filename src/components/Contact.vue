@@ -114,7 +114,7 @@
     padding: 12px 16px;
     font-size: 20px;
     cursor: pointer;
-    margin-left: 92.6%;
+    margin-left: 91%;
   }
   .titleContact {
     margin-left: 40%;
@@ -130,10 +130,10 @@
     width: 90%;
     margin-left: 20px;
   }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 600px) {
     .contact-image-background {
       max-width: 90%;
-      margin-top: 70%;
+      margin-top: 52%;
       margin-left: 5%;
     }
     .btn {
@@ -144,6 +144,19 @@
     }
     .titleContact {
       margin-left: 30%;
+    }
+  }
+  @media (min-width: 600px) and (max-width: 900px) {
+    .contact-image-background {
+      max-width: 90%;
+      margin-top: 20%;
+      margin-left: 5%;
+    }
+    .btn {
+      margin-left: 92%;
+    }
+    .titleContact {
+      margin-left: 42%;
     }
   }
 </style>
