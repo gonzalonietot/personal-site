@@ -139,11 +139,12 @@ export default {
       color: white;
     }
 
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 600px) {
         .image-background {
             height: 140%;
         }
         .software-developer {
+            transform: translate(1%, 500%);
             margin-left: 3%;
             margin-right: 15px;
         }
@@ -152,26 +153,26 @@ export default {
             width: 130px;
         }
         .about-me {
-            transform: translate(1%, 700%);
+            transform: translate(1%, 550%);
             margin-left: 30%;
         }
         .technologies {
             margin-left: 30%;
-            transform: translate(1%, 750%);
+            transform: translate(1%, 600%);
         }
         .contact {
-          transform: translate(1%, 800%);
+          transform: translate(1%, 650%);
           margin-left: 30%;
         }
     }
 
-    @media (min-width: 480px) and (max-width: 1024px) {
+    @media (min-width: 600px) and (max-width: 1264px) {
       .image-background {
         height: 140%;
         width: 100%;
       }
       .software-developer {
-        transform: translate(1%, 500%);
+        transform: translate(1%, 450%);
         margin-right: 20%;
         margin-left: 20%;
       }

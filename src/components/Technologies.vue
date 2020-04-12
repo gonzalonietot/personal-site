@@ -78,7 +78,7 @@
       padding: 12px 16px;
       font-size: 20px;
       cursor: pointer;
-      margin-left: 92.6%;
+      margin-left: 91%;
     }
     .titleTechnologies {
         margin-left: 40%;
@@ -101,10 +101,10 @@
       margin-left: 8%;
       margin-top: 8%;
     }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 600px) {
       .technologies-image-background {
         max-width: 90%;
-        margin-top: 70%;
+        margin-top: 52%;
         margin-left: 5%;
       }
       .btn {
@@ -119,12 +119,39 @@
       .image {
         height:40px;
         width: 40px;
-        margin-left: 8%;
+        margin-left: 10%;
       }
       .image-below {
         height:40px;
         width: 40px;
-        margin-left: 8%;
+        margin-left: 10%;
+        margin-top: 8%;
+      }
+    }
+    @media (min-width: 600px) and (max-width: 900px) {
+      .technologies-image-background {
+        max-width: 90%;
+        margin-top: 20%;
+        margin-left: 5%;
+      }
+      .btn {
+        margin-left: 90%;
+      }
+      .line {
+        margin-left: 46%;
+      }
+      .titleTechnologies {
+        margin-left: 42%;
+      }
+      .image {
+        height:50px;
+        width: 50px;
+        margin-left: 15%;
+      }
+      .image-below {
+        height:50px;
+        width: 50px;
+        margin-left: 15%;
         margin-top: 8%;
       }
     }
