@@ -124,8 +124,8 @@
         try {
           let data = {
             from_name: this.name,
-            from_mail: this.email,
-            messaje: this.message
+            from_email: this.email,
+            message: this.message
           }
           if (this.$refs.form.validate()) {
             await emailjs.send("outlook", "template_DS5RpxAn", data)
