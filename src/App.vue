@@ -19,5 +19,5 @@ export default {
 </script>
 
 <style>
-
+@import 'styles/_app.scss';
 </style>
