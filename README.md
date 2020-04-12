@@ -1,19 +1,12 @@
-#Portafolio Gonzalo Nieto
+#Welcome to my personal portfolio
 
+## AUTHOR
+```
+Mauro Gonzalo Nieto
+```
+
+### URL
+```
 https://gonzalonieto.netlify.com/
-
-## Project setup
-```
-npm install
 ```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-
-```
