@@ -37,7 +37,7 @@
           required
         />
       </v-form>
-      <v-btn style="margin-left: 88%; color: black" type="submit" icon @click="submit">
+      <v-btn style="margin-left: 88%; color: black" type="submit" icon @click="sendEmail">
         <v-icon>mdi-send</v-icon>
       </v-btn>
       <v-snackbar
@@ -103,7 +103,8 @@
         mode: '',
         x: null,
         y: 'top',
-        timeout: 4000,
+        timeout: 3000,
+        toName: 'Gonzalo Nieto',
         errorEmail: false,
         successEmail: false,
         textSuccess: 'Email enviado correctamente',
@@ -120,9 +121,10 @@
       validate () {
         this.$refs.form.validate()
       },
-      async submit() {
+      async sendEmail() {
         try {
           let data = {
+            to_name: this.toName,
             from_name: this.name,
             from_email: this.email,
             message: this.message
@@ -140,68 +142,3 @@
   }
 </script>
 
-<style scoped>
-  .contact-image-background {
-    background: rgba(255,255,255,1);
-    background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(237,237,237,0.23) 100%);
-    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(237,237,237,0.23)));
-    background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(237,237,237,0.23) 100%);
-    background: -o-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(237,237,237,0.23) 100%);
-    background: -ms-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(237,237,237,0.23) 100%);
-    background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(237,237,237,0.23) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=1 );
-    max-width: 40%;
-    margin-left: 30%;
-    margin-top: 16%;
-  }
-  .btn {
-    color: black;
-    padding: 12px 16px;
-    font-size: 20px;
-    cursor: pointer;
-    margin-left: 91%;
-  }
-  .titleContact {
-    margin-left: 40%;
-  }
-  .line {
-    background-color: darkcyan;
-    height: 2px;
-    width: 8%;
-    margin-left: 45%;
-    margin-top: 5px;
-  }
-  .form {
-    width: 90%;
-    margin-left: 20px;
-  }
-  @media screen and (max-width: 600px) {
-    .contact-image-background {
-      max-width: 90%;
-      margin-top: 52%;
-      margin-left: 5%;
-    }
-    .btn {
-      margin-left: 85%;
-    }
-    .line {
-      margin-left: 46%;
-    }
-    .titleContact {
-      margin-left: 30%;
-    }
-  }
-  @media (min-width: 600px) and (max-width: 900px) {
-    .contact-image-background {
-      max-width: 90%;
-      margin-top: 20%;
-      margin-left: 5%;
-    }
-    .btn {
-      margin-left: 92%;
-    }
-    .titleContact {
-      margin-left: 42%;
-    }
-  }
-</style>
