@@ -37,9 +37,36 @@
           required
         />
       </v-form>
-      <v-btn style="margin-left: 88%; color: black" type="submit" icon @submit.prevent="sendEmail">
+      <v-btn style="margin-left: 88%; color: black" type="submit" icon @click="submit">
         <v-icon>mdi-send</v-icon>
       </v-btn>
+      <v-snackbar
+        v-model="successEmail"
+        :bottom="y === 'bottom'"
+        :color="color"
+        :left="x === 'left'"
+        :multi-line="mode === 'multi-line'"
+        :right="x === 'right'"
+        :timeout="timeout"
+        :top="y === 'top'"
+        :vertical="mode === 'vertical'"
+      >
+        {{ textSuccess }}
+      </v-snackbar>
+      <v-snackbar
+        v-model="errorEmail"
+        :bottom="y === 'bottom'"
+        :color="color"
+        :left="x === 'left'"
+        :multi-line="mode === 'multi-line'"
+        :right="x === 'right'"
+        :timeout="timeout"
+        :top="y === 'top'"
+        :vertical="mode === 'vertical'"
+      >
+        {{ textError }}
+      </v-snackbar>
+
     </template>
   </section>
 </template>
@@ -71,8 +98,20 @@
         ],
         messageRules: [
           v => !!v || 'Mensaje es requerido',
-        ]
+        ],
+        color: 'blue',
+        mode: '',
+        x: null,
+        y: 'top',
+        timeout: 4000,
+        errorEmail: false,
+        successEmail: false,
+        textSuccess: 'Email enviado correctamente',
+        textError: 'El email no pudo enviarse'
       }
+    },
+    mounted() {
+      emailjs.init("user_m18gpHeoWn3IR6PJ2GpDm");
     },
     methods: {
       closeContact () {
@@ -81,16 +120,21 @@
       validate () {
         this.$refs.form.validate()
       },
-      sendEmail (e) {
-        console.log(e, 'Que tiene e?')
-        emailjs.sendForm('outlook', 'template_DS5RpxAn', e.target, 'user_m18gpHeoWn3IR6PJ2GpDm')
-          .then((result) => {
-            console.log(result, 'Result')
-            console.log('SUCCESS!', result.status, result.text)
-          }, (error) => {
-            console.log('FAILED...', error)
-          });
-      }
+      async submit() {
+        try {
+          let data = {
+            from_name: this.name,
+            from_mail: this.email,
+            messaje: this.message
+          }
+          if (this.$refs.form.validate()) {
+            await emailjs.send("outlook", "template_DS5RpxAn", data)
+            this.successEmail = true
+          }
+        } catch (e) {
+          this.errorEmail = true
+        }
+      },
     }
   }
 </script>
