@@ -130,6 +130,7 @@
           if (this.$refs.form.validate()) {
             await emailjs.send("outlook", "template_DS5RpxAn", data)
             this.successEmail = true
+            this.$refs.form.reset()
           }
         } catch (e) {
           this.errorEmail = true
