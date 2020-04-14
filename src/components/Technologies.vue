@@ -2,7 +2,7 @@
   <section v-if="showTechnologies" class="technologies-image-background">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <button type="button" class="btn" @click="closeTechnologies()">
-      <i class="fa fa-close"></i>
+      <i class="fa fa-close"/>
     </button>
     <h4 class="titleTechnologies">
       <strong>{{ technologiesTitle }}</strong>
