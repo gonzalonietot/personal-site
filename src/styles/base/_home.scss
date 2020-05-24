@@ -3,28 +3,28 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
-  height: 135%;
+  height: 100%;
   width: 100%;
 }
 .software-developer {
   color: white;
-  border: 1px white solid;
+  border: 3px white solid;
   text-align: center;
-  transform: translate(1%, 600%);
-  margin-left: 30%;
-  margin-right: 30%;
+  transform: translate(1%, 250%);
+  margin-left: 20%;
+  margin-right: 20%;
 }
 .about-me {
-  transform: translate(1%, 550%);
-  margin-left: 45%;
+  transform: translate(1%, 450%);
+  margin-left: 30%;
 }
 .technologies {
-  transform: translate(1%, 600%);
-  margin-left: 45%;
+  transform: translate(1%, 500%);
+  margin-left: 30%;
 }
 .contact {
-  transform: translate(1%, 650%);
-  margin-left: 45%;
+  transform: translate(1%, 550%);
+  margin-left: 30%;
 }
 .button {
   border: 1px white solid;
@@ -40,53 +40,3 @@
   color: white;
 }
 
-@media screen and (max-width: 600px) {
-  .image-background {
-    height: 140%;
-  }
-  .software-developer {
-    transform: translate(1%, 500%);
-    margin-left: 3%;
-    margin-right: 15px;
-  }
-  .button {
-    height: 30px;
-    width: 130px;
-  }
-  .about-me {
-    transform: translate(1%, 550%);
-    margin-left: 30%;
-  }
-  .technologies {
-    margin-left: 30%;
-    transform: translate(1%, 600%);
-  }
-  .contact {
-    transform: translate(1%, 650%);
-    margin-left: 30%;
-  }
-}
-
-@media (min-width: 600px) and (max-width: 1264px) {
-  .image-background {
-    height: 140%;
-    width: 100%;
-  }
-  .software-developer {
-    transform: translate(1%, 450%);
-    margin-right: 20%;
-    margin-left: 20%;
-  }
-  .about-me {
-    transform: translate(1%, 450%);
-    margin-left: 40%;
-  }
-  .technologies {
-    transform: translate(1%, 500%);
-    margin-left: 40%;
-  }
-  .contact {
-    transform: translate(1%, 550%);
-    margin-left: 40%;
-  }
-}
