@@ -3,40 +3,90 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
-  max-height: 100%;
+  height: 135%;
   width: 100%;
-  overflow-x: hidden;
-  overflow-y: hidden;
-}
-.text {
-  text-align: center;
-  color: white;
 }
 .software-developer {
+  color: white;
   border: 1px white solid;
-  margin-top: 180px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 70%;
+  text-align: center;
+  transform: translate(1%, 600%);
+  margin-left: 30%;
+  margin-right: 30%;
 }
-.info {
-  display: grid;
-  justify-content: center;
+.about-me {
+  transform: translate(1%, 550%);
+  margin-left: 45%;
+}
+.technologies {
+  transform: translate(1%, 600%);
+  margin-left: 45%;
+}
+.contact {
+  transform: translate(1%, 650%);
+  margin-left: 45%;
 }
 .button {
-  width: 110%;
   border: 1px white solid;
-  margin-top: 20px;
+  color: white;
+  height:40px ;
+  width: 150px;
 }
 .footer {
-  margin-top: 130px;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: white;
 }
 
-@media (min-width: 1024px) and (max-width: 2560px) {
+@media screen and (max-width: 600px) {
   .image-background {
-    height: 110%;
+    height: 140%;
   }
-  .footer {
-    margin-top: 180px;
+  .software-developer {
+    transform: translate(1%, 500%);
+    margin-left: 3%;
+    margin-right: 15px;
+  }
+  .button {
+    height: 30px;
+    width: 130px;
+  }
+  .about-me {
+    transform: translate(1%, 550%);
+    margin-left: 30%;
+  }
+  .technologies {
+    margin-left: 30%;
+    transform: translate(1%, 600%);
+  }
+  .contact {
+    transform: translate(1%, 650%);
+    margin-left: 30%;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1264px) {
+  .image-background {
+    height: 140%;
+    width: 100%;
+  }
+  .software-developer {
+    transform: translate(1%, 450%);
+    margin-right: 20%;
+    margin-left: 20%;
+  }
+  .about-me {
+    transform: translate(1%, 450%);
+    margin-left: 40%;
+  }
+  .technologies {
+    transform: translate(1%, 500%);
+    margin-left: 40%;
+  }
+  .contact {
+    transform: translate(1%, 550%);
+    margin-left: 40%;
   }
 }

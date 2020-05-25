@@ -7,21 +7,71 @@
   background: -ms-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(237,237,237,0.23) 100%);
   background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(237,237,237,0.23) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=1 );
+  background-position: 0 50%;
   position: absolute;
-  max-width: 90%;
-  margin-top: 50%;
-  margin-left: 4%;
-  height: 60%;
-}
-.titleAboutMe {
-  margin-left: 35%;
+  max-width: 40%;
+  margin-top: 16%;
+  margin-left: 30.5%;
 }
 .list {
-  margin-left: 10%;
+  margin-top: 20px;
+  margin-left: 5%;
+  font-size: 13px;
 }
 .about {
-  margin-left: 10px;
+  margin-left: 3%;
+  font-size: 13px;
+  padding-top: 10px;
+}
+.btn {
+  color: black;
+  padding: 12px 16px;
+  font-size: 20px;
+  cursor: pointer;
+  margin-left: 91%;
+}
+.titleAboutMe {
+  margin-left: 40%;
+}
+.line {
+  background-color: darkcyan;
+  height: 2px;
+  width: 8%;
+  margin-left: 45%;
+  margin-top: 5px;
+}
+.icon {
+  margin-left: 2%;
+  font-size: 20px;
+  color: black
 }
 
-
-
+@media screen and (max-width: 600px) {
+  .about-image-background {
+    max-width: 90%;
+    margin-top: 52%;
+    margin-left: 5%;
+  }
+  .btn {
+    margin-left: 85%;
+  }
+  .list {
+    margin-left: 10%;
+  }
+  .line {
+    margin-left: 46%;
+  }
+  .titleAboutMe {
+    margin-left: 35%;
+  }
+}
+@media (min-width: 600px) and (max-width: 900px) {
+  .about-image-background {
+    max-width: 90%;
+    margin-top: 20%;
+    margin-left: 5%;
+  }
+  .btn {
+    margin-left: 92%;
+  }
+}
