@@ -1,19 +1,19 @@
 <template>
   <div class="image-background">
-    <h3 class="software-developer">
+    <h3 class="software-developer text">
       {{ softwareDeveloper }}
     </h3>
-    <template v-if="!showAbout && !showTechnologies && !showContact">
-      <button type="button" class="about-me button" @click="openAboutMe()">
+    <div v-if="!showAbout && !showTechnologies && !showContact" class="info">
+      <button type="button" class="text button" @click="openAboutMe()">
         {{ aboutMe }}
       </button>
-      <button type="button" class="technologies button" @click="openTechnologies()">
+      <button type="button" class="text button" @click="openTechnologies()">
         {{ technologies }}
       </button>
-      <button type="button" class="contact button" @click="openContact()">
+      <button type="button" class="text button" @click="openContact()">
         {{ contact }}
       </button>
-    </template>
+    </div>
     <v-footer
       v-if="!showAbout && !showTechnologies && !showContact"
       class="footer"
@@ -33,7 +33,8 @@
             :key="icon"
             class="mx-4"
             dark
-            icon>
+            icon
+          >
             <v-icon size="24px">
               {{ icon }}
             </v-icon>
