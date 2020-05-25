@@ -1,19 +1,19 @@
 <template>
   <div class="image-background">
-    <h3 class="software-developer text">
+    <h3 class="software-developer">
       {{ softwareDeveloper }}
     </h3>
-    <div v-if="!showAbout && !showTechnologies && !showContact" class="info">
-      <button type="button" class="text button" @click="openAboutMe()">
+    <template v-if="!showAbout && !showTechnologies && !showContact">
+      <button type="button" class="about-me button" @click="openAboutMe()">
         {{ aboutMe }}
       </button>
-      <button type="button" class="text button" @click="openTechnologies()">
+      <button type="button" class="technologies button" @click="openTechnologies()">
         {{ technologies }}
       </button>
-      <button type="button" class="text button" @click="openContact()">
+      <button type="button" class="contact button" @click="openContact()">
         {{ contact }}
       </button>
-    </div>
+    </template>
     <v-footer
       v-if="!showAbout && !showTechnologies && !showContact"
       class="footer"
@@ -50,7 +50,6 @@
     <contact v-if="showContact" :show-contact.sync="showContact" />
   </div>
 </template>
-
 <script>
 import About from '../components/About.vue'
 import Technologies from '../components/Technologies'
