@@ -7,21 +7,89 @@
   background: -ms-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(237,237,237,0.23) 100%);
   background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(237,237,237,0.23) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=1 );
-  max-width: 90%;
-  margin-top: 50%;
-  margin-left: 4%;
+  max-width: 40%;
+  margin-left: 30.5%;
+  margin-top: 16%;
+}
+.btn {
+  color: black;
+  padding: 12px 16px;
+  font-size: 20px;
+  cursor: pointer;
+  margin-left: 91%;
 }
 .titleTechnologies {
-  margin-left: 30%;
+  margin-left: 40%;
+}
+.line {
+  background-color: darkcyan;
+  height: 2px;
+  width: 8%;
+  margin-left: 45%;
+  margin-top: 5px;
 }
 .image {
-  height:50px;
-  width: 50px;
-  margin-left: 15%;
+  height:80px;
+  width: 80px;
+  margin-left: 8%;
 }
 .image-below {
-  height:50px;
-  width: 50px;
-  margin-left: 15%;
-  margin-top: 5%;
+  height:80px;
+  width: 80px;
+  margin-left: 8%;
+  margin-top: 8%;
+}
+@media screen and (max-width: 600px) {
+  .technologies-image-background {
+    max-width: 90%;
+    margin-top: 52%;
+    margin-left: 5%;
+  }
+  .btn {
+    margin-left: 85%;
+  }
+  .line {
+    margin-left: 46%;
+  }
+  .titleTechnologies {
+    margin-left: 30%;
+  }
+  .image {
+    height:40px;
+    width: 40px;
+    margin-left: 10%;
+  }
+  .image-below {
+    height:40px;
+    width: 40px;
+    margin-left: 10%;
+    margin-top: 8%;
+  }
+}
+@media (min-width: 600px) and (max-width: 900px) {
+  .technologies-image-background {
+    max-width: 90%;
+    margin-top: 20%;
+    margin-left: 5%;
+  }
+  .btn {
+    margin-left: 90%;
+  }
+  .line {
+    margin-left: 46%;
+  }
+  .titleTechnologies {
+    margin-left: 42%;
+  }
+  .image {
+    height:50px;
+    width: 50px;
+    margin-left: 15%;
+  }
+  .image-below {
+    height:50px;
+    width: 50px;
+    margin-left: 15%;
+    margin-top: 8%;
+  }
 }

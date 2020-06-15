@@ -50,7 +50,7 @@
       return {
         technologiesTitle: 'Tecnologías'
       }
-      },
+    },
     methods: {
       closeTechnologies () {
         this.$emit('update:showTechnologies',false)

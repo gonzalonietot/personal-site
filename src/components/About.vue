@@ -38,8 +38,8 @@
     name: 'About',
     props: {
       showAbout: {
-          type: Boolean,
-          default: false
+        type: Boolean,
+        default: false
       },
     },
     data() {
@@ -47,10 +47,10 @@
         aboutMe: 'Acerca de mí',
         nationality: 'Nacionalidad',
         country: 'Argentina',
-        presentation: 'Desarrollador web-mobile full stack, trabajo con tecnologías, tales como\n' +
-          '            HTML5, CSS3, Javascript, Vue.js, Node.js, MySql, MongoDB. Me considero\n' +
-          '            entusiasta con ganas de aprender nuevas tecnologías, dispuesto a enfrentar nuevos proyectos,\n' +
-          '            que brinden soluciones a la comunidad.',
+        presentation: 'Soy desarrollador web-mobile full stack, me desenvuelvo en tecnologías, tales como\n' +
+                '            HTML5, CSS3, Javascript, Vue.js, Node.js, Docker, MySql, MongoDB, Cordova. Me considero\n' +
+                '            entusiasta con ganas de aprender nuevas tecnologías, dispuesto a enfrentar nuevos proyectos,\n' +
+                '            que brinden soluciones a la comunidad.',
         gitHub: 'Github',
         linkedin: 'Linkedin'
       }

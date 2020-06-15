@@ -2,14 +2,14 @@
   <section v-if="showContact" class="contact-image-background">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <button type="button" class="btn" @click="closeContact()">
-      <i class="fa fa-close"></i>
+      <i class="fa fa-close" />
     </button>
     <h4 class="titleContact">
       <strong>{{ contactTitle }}</strong>
     </h4>
     <hr class="line">
     <template>
-      <v-form
+      <v-form 
         ref="form"
         v-model="valid"
         lazy-validation
@@ -66,7 +66,6 @@
       >
         {{ textError }}
       </v-snackbar>
-
     </template>
   </section>
 </template>
