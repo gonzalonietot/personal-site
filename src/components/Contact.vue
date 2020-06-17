@@ -53,19 +53,6 @@
       >
         {{ textSuccess }}
       </v-snackbar>
-      <v-snackbar
-        v-model="errorEmail"
-        :bottom="y === 'bottom'"
-        :color="color"
-        :left="x === 'left'"
-        :multi-line="mode === 'multi-line'"
-        :right="x === 'right'"
-        :timeout="timeout"
-        :top="y === 'top'"
-        :vertical="mode === 'vertical'"
-      >
-        {{ textError }}
-      </v-snackbar>
     </template>
   </section>
 </template>
@@ -104,10 +91,8 @@
         y: 'top',
         timeout: 3000,
         toName: 'Gonzalo Nieto',
-        errorEmail: false,
         successEmail: false,
-        textSuccess: 'Email enviado correctamente',
-        textError: 'El email no pudo enviarse'
+        textSuccess: 'Email enviado correctamente'
       }
     },
     mounted() {
@@ -134,7 +119,7 @@
             this.$refs.form.reset()
           }
         } catch (e) {
-          this.errorEmail = true
+          //
         }
       },
     }

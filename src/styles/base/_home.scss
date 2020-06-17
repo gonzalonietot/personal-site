@@ -7,6 +7,7 @@
   width: 100%;
 }
 .software-developer {
+  background-color: #607D8B;
   color: white;
   border: 1px white solid;
   text-align: center;
@@ -15,14 +16,17 @@
   margin-right: 30%;
 }
 .about-me {
+  background-color:#607D8B;
   transform: translate(1%, 550%);
   margin-left: 45%;
 }
 .technologies {
+  background-color: #607D8B;
   transform: translate(1%, 600%);
   margin-left: 45%;
 }
 .contact {
+  background-color: #607D8B;
   transform: translate(1%, 650%);
   margin-left: 45%;
 }
@@ -42,7 +46,8 @@
 
 @media screen and (max-width: 600px) {
   .image-background {
-    height: 140%;
+    background-image: url("https://2.bp.blogspot.com/-XBM4IR6pnmU/TrfYUC6325I/AAAAAAAAAPk/gqVwZLDsASs/s1600/2011_11_07_NYC+Manhattanhenge.jpg");
+    height: 120%;
   }
   .software-developer {
     transform: translate(1%, 500%);
