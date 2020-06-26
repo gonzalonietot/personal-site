@@ -12,8 +12,5 @@ Tech stack:
 * Vue-cli
 * Vuetify
 
-Screen: 
-
-
 
 
