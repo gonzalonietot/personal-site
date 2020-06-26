@@ -1,12 +1,19 @@
-#Welcome to my personal portfolio
+#Bienvenidos a mi portafolio personal
 
-## AUTHOR
-```
-Mauro Gonzalo Nieto
-```
+En este portafolio les voy a contar un poco sobre mi !
 
-### URL
-```
-https://gonzalonieto.netlify.app/
-```
+Demo: https://gonzalonieto.netlify.app/
+
+Tech stack:
+
+* Javascript
+* Vue
+* NPM
+* Vue-cli
+* Vuetify
+
+Screen: 
+
+
+
 
