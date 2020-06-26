@@ -21,7 +21,7 @@ Clone Project:
 git clone https://github.com/gnieto11/portfolio.git
 ```
 
-install dependencies:
+Install dependencies:
 ```
 npm install
 ```
