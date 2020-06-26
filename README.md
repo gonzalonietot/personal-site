@@ -7,6 +7,6 @@ Mauro Gonzalo Nieto
 
 ### URL
 ```
-[Demo](https://gonzalonieto.netlify.app/).
+[Demo:](https://gonzalonieto.netlify.app/)
 ```
 
