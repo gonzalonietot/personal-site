@@ -2,7 +2,7 @@
   background-image: url("https://i.picsum.photos/id/664/1920/1080.jpg?hmac=auIX9PpUhFBGUjAWucNjz7raTacC0DAPo5ARXBlyHus");
   background-repeat: no-repeat;
   background-size: cover;
-  position: absolute;
+  position: fixed;
   height: 100vh;
   width: 100%;
 }
@@ -33,8 +33,8 @@
   width: 150px;
 }
 .footer {
-  position: fixed;
   background-color: black;
+  position: fixed;
   bottom: 0;
   width: 100%;
   color: white;
