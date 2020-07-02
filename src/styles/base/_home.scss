@@ -41,6 +41,11 @@
 }
 
 @media screen and (max-width: 600px) {
+  .image-background {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+  }
   .software-developer {
     transform: translate(1%, 500%);
     margin-left: 2%;

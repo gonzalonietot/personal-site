@@ -48,7 +48,7 @@
         aboutMe: 'Acerca de mí',
         nationality: 'Nacionalidad',
         country: 'Argentina',
-        presentation: 'Desarrollador full-stack, poseo mas de años de experiencia en el mundo IT, soy apasionado.  Actualmente estoy haciendo web principalmente' +
+        presentation: 'Desarrollador full-stack, apasionado por el mundo IT.  Actualmente estoy haciendo web principalmente' +
           ' con Javascript, Vue.js y Node.js, y estoy comenzando a realizar mobile con Flutter. En mis tiempos libres me gusta ' +
           'leer mucho, y conocer mas sobre este loco mundo que es sistemas.',
         gitHub: 'Github',
