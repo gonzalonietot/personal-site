@@ -22,7 +22,6 @@
           >
             <v-card
               height="200"
-              color="brown lighten-4"
             >
               <v-row
                 class="fill-height"
@@ -87,12 +86,12 @@
       return {
         length: 7,
         img: [
-          {id: 1, src: 'https://victorroblesweb.es/wp-content/uploads/2017/03/vuejs2-victorroblesweb.jpg'},
+          {id: 1, src: 'https://miro.medium.com/max/1200/1*qHsE-PM5TLmqzmYjmlr6-A.png'},
           {id: 2, src: 'https://programacion.net/files/article/20151019061031_MySQL.jpg'},
           {id: 3, src: 'https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg'},
           {id: 4, src: 'https://desarrolloweb.com/storage/tag_images/actual/sT1RLpDHzInATuKnDUkwXhKoaIOrtS97gBtgiQ6M.png'},
-          {id: 5, src: 'https://disenowebakus.net/imagenes/articulos/html5.jpg'},
-          {id: 6, src: 'https://www.solucionex.com/sites/default/files/posts/imagen/git.jpg'},
+          {id: 5, src: 'https://www.hostingbo.net/wp-content/uploads/2019/09/html5-logo.png'},
+          {id: 6, src: 'https://mariogl.com/wp-content/uploads/2018/01/git_logo-1-1.png'},
           {id: 7, src: 'https://miracomohacerlo.com/wp-content/uploads/2019/06/1129-1-1024x427.jpg'}
         ],
         onboarding: 0,

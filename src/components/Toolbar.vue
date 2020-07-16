@@ -6,7 +6,7 @@
       dark
       style="position: fixed"
       shrink-on-scroll
-      src="https://i.picsum.photos/id/1043/1920/1080.jpg?hmac=Ad3y6Aq4_I_i6va0ZGc1IOQlCcrztYZPY6A3E7z4eeA"
+      src="https://picsum.photos/1920/1080?random"
     >
       <v-avatar size="40" style="padding-top: 10px">
         <v-img src="../../public/static/personal.jpg" />
