@@ -1,36 +1,39 @@
 <template>
   <section v-if="showAbout" class="about-image-background">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <button type="button" class="btn" @click="closeAboutMe">
-      <i class="fa fa-close" />
-    </button>
-    <h4 class="titleAboutMe">
-      <strong>{{ aboutMe }}</strong>
-    </h4>
-    <hr class="line">
+    <v-toolbar
+      data-app
+      dark
+      prominent
+      height="60"
+      color="#00838F"
+    >
+      <v-toolbar-title>{{ aboutMe }}</v-toolbar-title>
+      <v-spacer />
+      <v-btn icon @click="closeAboutMe">
+        <v-icon>mdi-close</v-icon>
+      </v-btn>
+    </v-toolbar>
     <p class="about">
-      <strong style="color: black">{{ presentation }}</strong>
-      <ul class="list">
-        <li>
-          <strong style="padding-right: 10px;">{{ nationality }}:</strong>{{ country }}
-          <i class="fa fa-globe icon" aria-hidden="true" />
-        </li>
-        <li>
-          <strong>{{ gitHub }}</strong>:
-          <a href="https://github.com/gnieto11" target="_blank">
-            <i class="fa fa-github icon" aria-hidden="true" />
-          </a>
-        </li>
-        <li>
-          <strong>{{ linkedin }}
-          </strong>:
-          <a href="https://www.linkedin.com/in/gonzalo-nieto-03508a199/" target="_blank">
-            <i class="fa fa-linkedin icon" aria-hidden="true" />
-          </a>
-        </li>
-      </ul>
+      <strong>
+        Desarrollador web full-stack, proactivo, apasionado por la programación. Si tengo que hablar un poco sobre mi
+        estoy muy interesado en realizar aportes a la comunidad IT, ya sea desde el open source, o de otras maneras.
+        Actualmente estoy trabajando Vue.js, Node.js y MySql como principales tecnologías, y estoy entrando mas al mundo
+        mobile con Flutter.
+        <br>
+        Cualquier consulta están mis redes para contactame, saludos :)
+      </strong>
     </p>
-    <br>
+    <v-container fluid>
+      <v-row justify="center" style="margin-left: 50px">
+        <v-col cols="5">
+          <v-img aspect-ratio="1.4" src="../../public/static/naruto.jpg" />
+        </v-col>
+        <v-col cols="5">
+          <v-img aspect-ratio="1.4" src="../../public/static/naruto1.jpg" />
+        </v-col>
+      </v-row>
+    </v-container>
   </section>
 </template>
 
@@ -48,9 +51,6 @@
         aboutMe: 'Acerca de mí',
         nationality: 'Nacionalidad',
         country: 'Argentina',
-        presentation: 'Desarrollador full-stack, apasionado por el mundo IT.  Actualmente estoy haciendo web principalmente' +
-          ' con Javascript, Vue.js y Node.js, y estoy comenzando a realizar mobile con Flutter. En mis tiempos libres me gusta ' +
-          'leer mucho, y conocer mas sobre este loco mundo que es sistemas.',
         gitHub: 'Github',
         linkedin: 'Linkedin'
       }

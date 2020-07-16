@@ -1,13 +1,18 @@
 <template>
   <section v-if="showContact" class="contact-image-background">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <button type="button" class="btn" @click="closeContact()">
-      <i class="fa fa-close" />
-    </button>
-    <h4 class="titleContact">
-      <strong>{{ contactTitle }}</strong>
-    </h4>
-    <hr class="line">
+    <v-toolbar
+      data-app
+      dark
+      prominent
+      height="60"
+      color="#00838F"
+    >
+      <v-toolbar-title>{{ contactTitle }}</v-toolbar-title>
+      <v-spacer />
+      <v-btn icon @click="closeContact">
+        <v-icon>mdi-close</v-icon>
+      </v-btn>
+    </v-toolbar>
     <template>
       <v-form 
         ref="form"
@@ -92,11 +97,12 @@
         timeout: 3000,
         toName: 'Gonzalo Nieto',
         successEmail: false,
-        textSuccess: 'Email enviado correctamente'
+        textSuccess: 'Email enviado correctamente',
+        emailReply: "maurogonzalonieto2011@hotmail.com.ar"
       }
     },
     mounted() {
-      emailjs.init("user_m18gpHeoWn3IR6PJ2GpDm");
+      emailjs.init("user_m18gpHeoWn3IR6PJ2GpDm")
     },
     methods: {
       closeContact () {
@@ -108,13 +114,14 @@
       async sendEmail() {
         try {
           let data = {
+            reply_to: this.emailReply,
             to_name: this.toName,
             from_name: this.name,
             from_email: this.email,
             message: this.message
           }
           if (this.$refs.form.validate()) {
-            await emailjs.send("outlook", "template_DS5RpxAn", data)
+            await emailjs.send("gmail", "template_DS5RpxAn", data)
             this.successEmail = true
             this.$refs.form.reset()
           }

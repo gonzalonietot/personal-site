@@ -30,13 +30,15 @@
           <v-spacer />
           <v-btn
             v-for="icon in icons"
-            :key="icon"
+            :key="icon.id"
             class="mx-4"
             dark
             icon
+            target="_blank"
+            :href="icon.href"
           >
             <v-icon size="24px">
-              {{ icon }}
+              {{ icon.icon }}
             </v-icon>
           </v-btn>
         </v-card-title>
@@ -72,14 +74,12 @@
         technologies: 'Tecnologías',
         contact: 'Contacto',
         softwareDeveloper: 'Software developer',
-        connect: 'Conectate a mis redes sociales',
+        connect: 'Conéctate a mis redes sociales',
         allRightsReserved: 'Todos los derechos reservados',
         icons: [
-          'mdi-facebook',
-          'mdi-twitter',
-          'mdi-google-plus',
-          'mdi-linkedin',
-          'mdi-instagram',
+          {id: 1 ,icon: 'mdi-twitter', href: 'https://twitter.com/gonzalonietot'},
+          {id: 2, icon: 'mdi-linkedin', href: 'https://www.linkedin.com/in/gonzalo-nieto-03508a199/'},
+          {id: 3, icon: 'mdi-instagram', href: 'https://www.instagram.com/gonzalonietot/'},
         ],
       }
     },
