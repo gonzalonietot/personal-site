@@ -86,7 +86,7 @@
       return {
         length: 7,
         img: [
-          {id: 1, src: 'https://miro.medium.com/max/1200/1*qHsE-PM5TLmqzmYjmlr6-A.png'},
+          {id: 1, src: 'https://victorroblesweb.es/wp-content/uploads/2017/03/vuejs2-victorroblesweb.jpg'},
           {id: 2, src: 'https://programacion.net/files/article/20151019061031_MySQL.jpg'},
           {id: 3, src: 'https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg'},
           {id: 4, src: 'https://desarrolloweb.com/storage/tag_images/actual/sT1RLpDHzInATuKnDUkwXhKoaIOrtS97gBtgiQ6M.png'},
