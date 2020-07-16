@@ -15,7 +15,6 @@
       </button>
     </template>
     <v-footer
-      v-if="!showAbout && !showTechnologies && !showContact"
       class="footer"
       dark
       padless

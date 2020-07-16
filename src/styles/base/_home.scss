@@ -2,8 +2,8 @@
   background-image: url("https://i.picsum.photos/id/664/1920/1080.jpg?hmac=auIX9PpUhFBGUjAWucNjz7raTacC0DAPo5ARXBlyHus");
   background-repeat: no-repeat;
   background-size: cover;
-  position: fixed;
-  height: 100vh;
+  position: absolute;
+  height: 150%;
   width: 100%;
 }
 .software-developer {
@@ -34,8 +34,7 @@
 }
 .footer {
   background-color: black;
-  position: fixed;
-  bottom: 0;
+  position: absolute;
   width: 100%;
   color: white;
 }
@@ -44,7 +43,7 @@
   .image-background {
     position: absolute;
     width: 100%;
-    height: 130%;
+    height: 150%;
   }
   .software-developer {
     transform: translate(1%, 500%);
@@ -66,9 +65,6 @@
   .contact {
     transform: translate(1%, 750%);
     margin-left: 30%;
-  }
-  .footer {
-    position: absolute;
   }
 }
 
