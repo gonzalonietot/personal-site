@@ -1,6 +1,6 @@
 # Bienvenidos a mi portafolio personal
 
-[![Twitter Follow](https://img.shields.io/twitter/follow/maktub82.svg?style=social&label=Follow)](https://twitter.com/gonzalonietot)
+[![Twitter Follow]https://img.shields.io/twitter/follow/gonzalonietot.svg?style=social&label=Follow
 
 
 En este portafolio les voy a contar un poco sobre mi !
