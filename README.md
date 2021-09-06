@@ -14,7 +14,6 @@ Tech stack:
 
 * Javascript
 * Vue
-* NPM
 * Vue-cli
 * Vuetify
 
