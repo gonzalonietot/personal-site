@@ -18,13 +18,10 @@ Tech stack:
 * Vue-cli
 * Vuetify
 
-Screen: 
-
-![Imagen de portafolio](https://raw.githubusercontent.com/gnieto11/portfolio/master/public/static/portfolio.PNG)
 
 Clone Project:
 ```
-https://github.com/gonzalonietot/site
+https://github.com/gonzalonietot/personal-site
 ```
 
 Install dependencies:
