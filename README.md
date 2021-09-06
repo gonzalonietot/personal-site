@@ -24,7 +24,7 @@ Screen:
 
 Clone Project:
 ```
-git clone https://github.com/gnieto11/portfolio.git
+https://github.com/gonzalonietot/site
 ```
 
 Install dependencies:
